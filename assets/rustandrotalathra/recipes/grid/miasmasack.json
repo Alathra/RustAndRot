@@ -1,0 +1,13 @@
+{
+	ingredientPattern: "WWW,WLW,WIW",
+	ingredients: {
+		"W": { type: "item", code: "rustandrotalathra:miasmawarts", quantity: 2 },
+		"L": { type: "item", code: "game:flaxtwine", quantity: 4 },
+		"I": { type: "item", code: "game:ingot-iron", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	"shapeless": false,
+	name: "miasma sack",
+	output: { type: "item", code: "rustandrotalathra:miasmasack"  }
+}

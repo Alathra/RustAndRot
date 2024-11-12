@@ -1,0 +1,545 @@
+{
+  "version": 2,
+  "patches": {
+    "integer": {
+      "rustandrotalathra:patches/spawn_adjustments.json": {
+        "10/value/": "rustandrotalathra:ROTPILLARCHANCE",   
+        "11/value/": "rustandrotalathra:ROTPILLARLIGHTMAX",
+        "12/value/": "rustandrotalathra:ROTPILLARLIGHTMIN",
+
+        "13/value/": "rustandrotalathra:ROTWALKERCHANCE",   
+        "14/value/": "rustandrotalathra:ROTWALKERLIGHTMAX",
+        "15/value/": "rustandrotalathra:ROTWALKERLIGHTMIN",
+
+        "16/value/": "rustandrotalathra:ROTBEASTCHANCE",   
+        "17/value/": "rustandrotalathra:ROTBEASTLIGHTMAX",
+        "18/value/": "rustandrotalathra:ROTBEASTLIGHTMIN",
+
+        "19/value/": "rustandrotalathra:ROTCRAWLERCHANCE",   
+        "20/value/": "rustandrotalathra:ROTCRAWLERLIGHTMAX",
+        "21/value/": "rustandrotalathra:ROTCRAWLERLIGHTMIN",
+
+        "22/value/": "rustandrotalathra:MIASMACHANCE",   
+        "23/value/": "rustandrotalathra:MIASMALIGHTMAX",
+        "24/value/": "rustandrotalathra:MIASMALIGHTMIN",
+
+        "25/value/": "rustandrotalathra:BOILERCHANCE",   
+        "26/value/": "rustandrotalathra:BOILERLIGHTMAX",
+        "27/value/": "rustandrotalathra:BOILERLIGHTMIN",
+
+        "28/value/": "rustandrotalathra:GOLEMCHANCE",   
+        "29/value/": "rustandrotalathra:GOLEMLIGHTMAX",
+        "30/value/": "rustandrotalathra:GOLEMLIGHTMIN",
+
+        "31/value/": "rustandrotalathra:ITINERANTCHANCE",   
+        "32/value/": "rustandrotalathra:ITINERANTLIGHTMAX",
+        "33/value/": "rustandrotalathra:ITINERANTLIGHTMIN",
+
+        "34/value/": "rustandrotalathra:MIMICCHANCE",   
+        "35/value/": "rustandrotalathra:MIMICLIGHTMAX",
+        "36/value/": "rustandrotalathra:MIMICLIGHTMIN",
+
+        "37/value/": "rustandrotalathra:ROAMERCHANCE",   
+        "38/value/": "rustandrotalathra:ROAMERLIGHTMAX",
+        "39/value/": "rustandrotalathra:ROAMERLIGHTMIN",
+
+        "40/value/": "rustandrotalathra:BONEMASSCHANCE",   
+        "41/value/": "rustandrotalathra:BONEMASSLIGHTMAX",
+        "42/value/": "rustandrotalathra:BONEMASSLIGHTMIN"
+      }
+    },
+    "string": {
+      "rustandrotalathra:patches/spawn_adjustments.json": {
+            "0/value/": "rustandrotalathra:ROTPILLARLIGHTTYPE",
+            "1/value/": "rustandrotalathra:ROTWALKERLIGHTTYPE",
+            "2/value/": "rustandrotalathra:MIASMALIGHTTYPE",
+            "3/value/": "rustandrotalathra:ROTBEASTLIGHTTYPE",
+            "4/value/": "rustandrotalathra:ROTCRAWLERLIGHTTYPE",
+
+            "5/value/": "rustandrotalathra:BOILERLIGHTTYPE",
+            "6/value/": "rustandrotalathra:GOLEMLIGHTTYPE",
+            "7/value/": "rustandrotalathra:ITINERANTLIGHTTYPE",
+            "8/value/": "rustandrotalathra:MIMICLIGHTTYPE",
+            "9/value/": "rustandrotalathra:ROAMERLIGHTTYPE",
+            "10/value/": "rustandrotalathra:BONEMASSLIGHTTYPE"
+      }
+    }
+  },
+  "settings": {
+    "integer": {
+      "ROTWALKERCHANCE": {
+        "name": "CHANCE",
+        "weight": 2,
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "default": 50,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ROTWALKERLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 3,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROTWALKERLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 4,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+
+      "ROTBEASTCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 6,
+        "default": 30,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ROTBEASTLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 7,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROTBEASTLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 8,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "ROTCRAWLERCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 10,
+        "default": 30,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ROTCRAWLERLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 11,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROTCRAWLERLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 12,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+
+      "ROTPILLARCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 14,
+        "default": 33,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ROTPILLARLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 15,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROTPILLARLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 16,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "MIASMACHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 18,
+        "default": 10,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "MIASMALIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 19,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "MIASMALIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 20,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "BONEMASSCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 22,
+        "default": 6,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "BONEMASSLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 23,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "BONEMASSLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 24,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "BOILERCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 26,
+        "default": 6,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "BOILERLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 27,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "BOILERLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 28,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "GOLEMCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 30,
+        "default": 20,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "GOLEMLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 31,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "GOLEMLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 32,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+
+      "ITINERANTCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 34,
+        "default": 6,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ITINERANTLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 35,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ITINERANTLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 36,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "MIMICCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 38,
+        "default": 10,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "MIMICLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 39,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "MIMICLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 40,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROAMERCHANCE": {
+        "name": "CHANCE",
+        "comment": "rustandrotalathra:Configlib-chance-comment",
+        "weight": 42,
+        "default": 6,
+				"logarithmic": true,
+        "range": {
+          "min": 0,
+          "max": 500,
+          "step": 0.05
+        }
+      },
+      "ROAMERLIGHTMAX": {
+        "name": "LIGHTMAX",
+        "weight": 43,
+        "default": 0,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      },
+      "ROAMERLIGHTMIN": {
+        "name": "LIGHTMIN",
+        "weight": 44,
+        "default": 4,
+        "range": {
+          "min": 0,
+          "max": 32
+        }
+      }
+
+
+},
+"string": {
+  "ROTWALKERLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 5,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "ROTBEASTLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 9,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "ROTCRAWLERLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 13,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "ROTPILLARLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 17,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "MIASMALIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 21,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "BONEMASSLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 25,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "BOILERLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 29,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "GOLEMLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 33,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "ITINERANTLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 37,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "MIMICLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 41,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  },
+  "ROAMERLIGHTTYPE": {
+    "name": "LIGHTTYPE",
+    "weight": 45,
+    "default": "onlyBlockLight",
+    "values": ["onlyBlockLight", "onlysunlight", "maxlight", "maxtimeofdaylight"]
+  }
+}
+  },
+  "formatting": [
+    {
+      "type": "Title",
+      "title": "Rust & Rot Entity Settings",
+      "text": "Edit these values at your leisure.",
+      "weight": 1.0
+    },
+    {
+      "type": "separator",
+      "title": "item-rnrcreature-rotwalker-normal",
+      "weight": 1.5
+    },
+    {
+      "type": "separator",
+      "title": "configlib-rotbeast",
+      "weight": 5.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-rotcrawler",
+      "weight": 9.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-rotpillar",
+      "weight": 13.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-miasma",
+      "weight": 17.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-bonemass",
+      "weight": 21.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-boiler",
+      "weight": 25.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-golem-normal",
+      "weight": 29.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-itinerant-normal",
+      "weight": 33.5
+    },
+    {
+      "type": "separator",
+      "title": "item-creature-mimic",
+      "weight": 37.5
+    },
+    {
+      "type": "separator",
+      "title": "item-rnrcreature-roamer-normal",
+      "weight": 41.5
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+	code: "bonemass",
+	class: "EntityAgent",
+	hitboxSize: { x: 2.3, y: 3 },
+	canClimb: true,
+	canClimbAnywhere: true,
+	deadHitboxSize: { x: 2.3, y: 3},
+	eyeHeight: 3.3,
+	drops: [],
+	client: {
+		renderer: "Shape",
+		shape: { base: "rustandrotalathra:entity/land/rotten/bonemass" },
+		textures: {
+		"bonemass": { base: "rustandrotalathra:entity/rotten/bonemass/bonemass"},
+		"human": { base:"rustandrotalathra:entity/rotten/bonemass/human"}
+
+		},
+
+
+		behaviors: [
+			{ code: "repulseagents" },
+			{ code: "boss"}, 
+			{ code: "controlledphysics", stepHeight: 1.1251 }, 
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "interpolateposition" },
+			{ code: "harvestable" },
+			{ code: "despawn", minPlayerDistance: 16, minSeconds: 300, afterDays: 14 },
+		],
+		animations: [
+			{
+				"code": "hurt",
+				"animation": "hurt", 
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage" 
+			},
+			{
+				"code": "walk",
+				"animation": "walk", 
+				"animationSpeed": 0.3,
+				"weight": 10,
+				"blendMode": "Average" 
+			},
+			{
+				"code": "die",
+				"animation": "die", 
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "AddAverage",
+				"triggeredBy": { "onControls": ["dead"] }
+			},
+			{ 
+				"code": "idle", 
+				"animation": "idle",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	server: {
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "controlledphysics", stepHeight: 1.1251 },
+			{ code: "despawn", minPlayerDistance: 10, minSeconds: 300 },
+			{ code: "health", currenthealth: 300, maxhealth: 300 },
+			{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "drycarcass-large"},
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "breathe" },
+			{ 
+				code: "emotionstates",
+				states: [
+					{ code: "aggressiveondamage", duration: 30, chance: 1, slot: 2, priority: 2, accumType: "noaccum" },
+				]
+			},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 2,
+						"minDist": 6,
+						"minVerDist": 5,
+						"damage": 20,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"minCooldown": 2000,
+						"maxCooldown": 2750,
+						"attackDurationMs": 8500,
+						"damagePlayerAtMs": 1000,
+						"animation": "Attack",
+						"animationSpeed": 1,
+						"sound": "rustandrotalathr:creature/boiler/attack1"
+					},
+					{
+						code: "throwatentity",
+						entityCodes: ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						projectileCode: "rustandrotalathra:thrownskull",
+						projectileDamage: 9,
+						damageTier: 2,
+						priority: 1.55,
+						priorityForCancel: 9,
+						mincooldown: 1000, 
+						maxcooldown: 2000, 
+						durationMs: 2166,
+						releaseAtMs: 1800,
+						seekingRange: 15,
+						soundStartMs: 200,
+						soundRange: 32,
+						animationSpeed: 1.25,
+						animation: "throw",
+						immobile: true,
+						maxTurnAngleDeg: 35,
+						maxOffAngleThrowDeg: 85,
+						"sound": "rustandrotalathra:creature/boiler/attack1"
+					},
+					{
+						"code": "meleeattack",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 2,
+						"minDist": 6,
+						"minVerDist": 5,
+						"damage": 12,
+						"damageType": "SlashingAttack",
+						"slot": 1,
+						"minCooldown": 2000,
+						"maxCooldown": 2750,
+						"attackDurationMs": 3000,
+						"damagePlayerAtMs": 1000,
+						"animation": "Attack2",
+						"animationSpeed": 1,
+						"sound": "rustandrotalathra:creature/boiler/attack2"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 1.51,
+						"movespeed": 0.006,
+						"seekingRange": 40,
+						"animation": "Walk",
+						"animationSpeed": 0.3,
+						"sound": "rustandrotalathra:creature/boiler/idle*"
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "Walk",
+						"animationSpeed": 0.3
+					},
+					{
+						"code": "wander", 
+						"priority": 1.0, 
+						"priorityForCancel": 1.35,
+						"movespeed": 0.006,
+						"animation": "Walk",
+						"preferredLightLevel": 20,
+						"animationSpeed": 0.3
+					},
+					{ 
+						"code": "lookaround", 
+						"priority": 0.5
+					}
+				]
+			},
+			{ "code":
+				"harvestable",
+				"duration": 4,
+				"drops": [
+			{ type: "item", code: "rustandrotalathra:throwableskull", quantity: { avg: 0.0002, var: 1 }   },
+			{ type: "item", code: "game:ingot-gold", quantity: { avg: 2, var: 0.5 }   },
+			{ type: "item", code: "game:rot", quantity: { avg: 10, var: 3 }   },
+			{ type: "item", code: "game:bone", quantity: { avg: 10, var: 3 }   }
+				]
+			}
+		],
+		
+		"spawnconditions": {
+			"runtime": {
+				"group": "hostile",
+				"maxQuantity": 1,
+				"maxLightLevel": 4,
+				"minLightLevel": 0,
+				"lightLevelType": "onlyBlockLight",
+				"chance": 0.00006,
+				"groupSize": { "avg": 1, "var": 0 },
+				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
+				"minY":0,
+				"maxY": 2
+				}
+			},
+	sounds: {
+		hurt: "rustandrotalathra:creature/boiler/hurt",
+		death: "rustandrotalathra:creature/boiler/death",
+		idle: "rustandrotalathra:creature/boiler/idle*"
+	},
+	idleSoundChance: 0.05
+}
+}

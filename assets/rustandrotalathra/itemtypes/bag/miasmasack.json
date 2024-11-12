@@ -1,0 +1,41 @@
+{
+	code: "miasmasack",
+	maxstacksize: 1,
+	attributes: {
+		wearableAttachment: true,
+		attachShape: { base: "item/bag/miasmasackback" },
+		backpack: {
+			quantitySlots: 9
+		}
+	},
+	shape: { base: "rustandrotalathra:item/bag/miasmasack" },
+	textures: {
+		"straps": { base: "game:block/linen" },
+		"leather": { base: "rustandrotalathra:item/bag/miasmasack" } 
+	},
+	behaviors: [{ name: "GroundStorable", properties: { layout: "SingleCenter", collisionBox: { x1: 0.25, y1: 0, z1: 0.25, x2: 0.75, y2: 0.375, z2: 0.75 }}}],
+	storageFlags: 2,
+	creativeinventory: { "general": ["*"], "items": ["*"], "rustandrotalathra": ["*"] },
+	guiTransform: {
+		translation: { x: 0, y: -6, z: 0 },
+		rotation: { x: -8, y: -51, z: 180 },
+		origin: { x: 0.5299, y: 0.35, z: 0.5 },
+		scale: 2.3
+	},
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0.2 },
+		rotation: { x: 20, y: -73, z: 10 },
+		scale: 2.5
+	},
+	tpHandTransform: {
+		translation: { x: -0.91, y: -0.07, z: -0.65 },
+		rotation: { x: 11, y: 95, z: 7 },
+		scale: 0.86
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 180, y: 33, z: -180 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 4.5
+	}
+}

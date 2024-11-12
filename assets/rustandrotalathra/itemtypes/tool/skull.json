@@ -1,0 +1,62 @@
+{
+	code: "throwableskull",
+	class: "ItemSpear",
+	damagedby: ["attacking"],
+	tool: "spear",
+	shape: {base: "game:item/clutter/skull/humanoid" },
+	heldTpHitAnimation: "falx",
+	behaviors: [ { name: "AnimationAuthoritative" }],
+	attackRange: 1,
+	attackpowerbytype: {
+		"*": 1.5
+	},
+	attributes: {
+		groundStorageTransformByType: {
+			"*": {
+				translation: { x: -0.39, y: 0.78, z: 0.235 },
+				rotation: { x: 16, y: 1, z: 90 },
+				scale: 0.85
+			}
+		},
+		"__comment": "Thrown damage",
+		damage: 9.25,
+		spearEntityCode: "rustandrotalathra:thrownskullp",
+		handbook: {
+			groupBy: ["spear-*"]
+		},
+			toolrackTransform: {
+				translation: { x: 0.1, y: 0.05, z: 0.5 },
+				rotation: { x: 114, y: 70, z: -42 },
+				scale: 1.59
+			}
+		},
+	durabilitybytype: {
+		"*": 200,
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "tools": ["*"], "rustandrotalathra": ["*"]  },
+	guiTransform: {
+		translation: { x: 30, y: 33, z: 0 },
+		rotation: { x: 52, y: -22, z: -139 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 2.52
+	},
+	fpHandTransform: {
+			translation: { x: 0.1, y: 0.4, z: 0.16 },
+			rotation: { x: -82, y: 180, z: 96 },
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 2.45
+		},
+	groundTransform: {
+				translation: { x: 0, y: 0.05, z: 0 },
+				rotation: { x: 90, y: 0, z: 0 },
+				origin: { x: 0.5, y: 0, z: 0.5 },
+				scale: 3.4
+			},
+	tpHandTransform: {
+		translation: { x: -0.89, y: 0.03, z: -0.57 },
+		rotation: { x: -90, y: 119, z: -20 },
+		origin: { x: 0.6, y: 0, z: 0.5 },
+		scale: 0.8
+	}
+}
+  

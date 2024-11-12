@@ -1,0 +1,35 @@
+{
+	"editor": {
+		"backDropShape": "C:/Users/User/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph",
+		"collapsedPaths": "Root/bandN/toothR1,Root/bandN/toothL1",
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 24,
+	"textureHeight": 24,
+	"textureSizes": {
+		"material": [24,24]
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "GamHelmet",
+			"stepParentName": "Head",
+			"from": [ -0.6, -0.2, -0.7 ],
+			"to": [ 6.7, 5.8, 5.7 ],
+			"unwrapMode": 4,
+			"unwrapRotation": 1,
+			"autoUnwrap": false,
+			"uv": [ -2.7157, 0.7143 ],
+			"rotationOrigin": [ -0.6, -0.2, -0.7 ],
+			"faces": {
+				"north": { "texture": "#material", "uv": [ 12.8571, 6.4286, 18.8571, 13.7143 ], "rotation": 90 },
+				"east": { "texture": "#material", "uv": [ 15.8571, 9.8571, 21.8571, 15.8571 ], "rotation": 270 },
+				"south": { "texture": "#material", "uv": [ 0.0, 7.2857, 6.0, 14.5714 ], "rotation": 90 },
+				"west": { "texture": "#material", "uv": [ 6.4286, 9.8571, 12.4286, 15.8571 ] },
+				"up": { "texture": "#material", "uv": [ 16.7143, 2.5714, 24.0, 8.5714 ], "rotation": 180 },
+				"down": { "texture": "#material", "uv": [ 0.4286, 12.0, 6.4286, 19.2857 ], "rotation": 270 }
+			}
+		}
+	]}

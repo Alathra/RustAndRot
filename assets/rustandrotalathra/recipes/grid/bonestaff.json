@@ -1,0 +1,15 @@
+[
+{
+	ingredientPattern: "BS_,_L_,_B_",
+	ingredients: {
+		"S": { type: "item", code: "rustandrotalathra:throwableskull", quantity: 1 },
+		"L": { type: "item", code: "game:leather-plain", quantity: 4 },
+		"B": { type: "item", code: "game:bone", quantity: 8 }
+	},
+	width: 3,
+	height: 3,
+	"shapeless": false,
+	name: "bonestaff",
+	output: { type: "item", code: "rustandrotalathra:bonestaff"  }
+}
+]

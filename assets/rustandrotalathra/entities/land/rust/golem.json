@@ -1,0 +1,190 @@
+{
+	code: "golem",
+	class: "EntityAgent",
+	canClimb: true,
+	canClimbAnywhere: true,
+	hitboxSize: { x: 0.5, y: 1 },
+	deadHitboxSize: { x: 1.3, y: 0.75 },
+	eyeHeight: 1.5,
+	drops: [],
+	variantgroups: [
+		{ code: "type", states: ["normal"]}
+	],
+	client: {
+		renderer: "Shape",
+		size: 0.5,
+		pitchStep: false,
+		shapeByType: {
+			"*-normal": { base: "rustandrotalathra:entity/land/rust/golem" , alternates: [{ base: "rustandrotalathra:entity/land/rust/golemfancy" }] },
+		},
+		texturesByType: {
+			"*-normal": {
+				"rusty3": { "base":"game:block/metal/corroded/rusty3"},
+				"faceplategolem": { "base":"rustandrotalathra:entity/rust/itinerant/faceplategolem"},
+					"black": { "base":"game:block/black"},
+					"gold": { "base":"game:block/metal/tarnished/gold"}
+				}},
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "controlledphysics", stepHeight: 1.1251 }, 
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "interpolateposition" },
+			{ code: "harvestable", duration: 2},
+		],
+		animations: [
+			{
+				code: "hurt",
+				animation: "hurt", 
+				animationSpeed: 2.2,
+				weight: 10,
+				blendMode: "AddAverage" 
+			},
+			{
+				code: "die",
+				animation: "die", 
+				animationSpeed: 1.25,
+				weight: 10,
+				blendMode: "Average",
+				triggeredBy: { onControls: ["dead"] }
+			},
+			{ 
+				code: "idle", 
+				animation: "idle1",
+				blendMode: "AddAverage",
+				easeOutSpeed: 4,
+				triggeredBy: { defaultAnim: true }
+			}
+		]
+	},
+	server: {
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "controlledphysics", stepHeight: 1.1251 },
+			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 300 },
+			{ code: "health", 
+			currenthealthByType: {
+				"*-normal": 14,
+			},
+			maxhealthByType: {
+				"*-normal": 14,
+			},
+		},
+		{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "metalpartpile-large"},
+		{ code: "floatupwhenstuck", onlyWhenDead: true },
+		{ code: "despawn", minPlayerDistance: 32, minSeconds: 30 },
+		{ code: "despawn", minPlayerDistance: 64, minSeconds: 6 },
+			{ 
+				code: "emotionstates",
+				states: [
+					{ code: "fleeondamage", duration: 60, chance: 0.30, slot: 2, priority: 5, accumType: "max", whenHealthRelBelow: 0.3 },
+					{ code: "aggressiveondamage", duration: 30, chance: 1, slot: 2, priority: 2, accumType: "noaccum" },
+				]
+			},
+			{
+				code: "taskai",
+				aitasks: [
+					{
+						code: "meleeattack",
+						entityCodes: ["player", "rotbeast-*", "miasma", "parasitic-flies", "rotpillar", "rotwalker-*", "rotcrawler"],
+						priority: 2,
+						"damageByType": {
+						        "*-normal": 3},
+						  "damageTierByType": {
+						        "*-normal": 1},
+						damageType: "SlashingAttack",
+						slot: 1,
+						mincooldown: 500, 
+						maxcooldown: 1750, 
+						minDist: 1.5,
+						attackDurationMs: 1000,
+						damagePlayerAtMs: 400,
+						animation: "swordhit",
+						animationSpeed: 1,
+					},
+					{
+						code: "fleeentity",
+						entityCodes: ["player", "rotbeast-*", "miasma", "parasitic-flies", "rotpillar", "rotwalker-*", "rotcrawler"],
+						priority: 1.6,
+						movespeed: 0.030,
+						seekingRange: 15,
+						animation: "Sprint",
+						animationSpeed: 1,
+						whenInEmotionState: "fleeondamage",
+					},
+					{
+						code: "seekentity",
+						entityCodes: ["player", "rotbeast-*", "miasma", "parasitic-flies", "rotpillar", "rotwalker-*", "rotcrawler"],
+						priority: 1.51,
+						movespeed: 0.030,
+						leapChance: 0.01,
+						seekingRange: 15,
+						animation: "Sprint",
+						animationSpeed: 1,
+					},
+					{
+						code: "seekentity",
+						entityCodes: ["player", "rotbeast-*", "miasma", "parasitic-flies", "rotpillar", "rotwalker-*", "rotcrawler"],
+						priority: 1.49,
+						movespeed: 0.030,
+						seekingRange: 15,
+						animation: "Sprint",
+						leapChance: 0.01,
+						animationSpeed: 2,
+						whenInEmotionState: "aggressiveondamage"
+					},
+					{
+						code: "getoutofwater",
+						priority: 1.4,
+						movespeed: 0.015,
+						animation: "Walk",
+						animationSpeed: 2.2
+					},
+					{
+						code: "wander", 
+						priority: 1.0, 
+						priorityForCancel: 1.35,
+						movespeed: 0.006,
+						animation: "Walk",
+						preferredLightLevel: 20
+					},
+					{ 
+						code: "lookaround", 
+						priority: 0.5
+					}
+				]
+			},
+			{ code: "harvestable", "duration": 2, drops: [
+				{
+					type: "item",
+					code: "metal-parts",
+					quantity: { avg: 1, var: 0.25 }
+				}
+			]
+		},
+		],
+		"spawnconditions": {
+			"runtime": {
+				"group": "hostile",
+				maxQuantityByType: {
+					"*-normal": 3,
+				},
+				"maxLightLevel": 4,
+				"minLightLevel": 0,
+				"lightLevelType": "onlyBlockLight",
+				"chance": 0.0002,
+				"minDistanceToPlayer": 64,
+				"groupSize": { "avg": 3, "var": 1 },
+				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
+				"minTemp": -40,
+				"maxTemp": 40,
+			}
+		}
+	},
+	soundsByType: {
+		"*": {
+			hurt: "rustandrotalathra:creature/golem/hurt",
+			death: "rustandrotalathra:creature/golem/death",
+			idle: "rustandrotalathra:creature/golem/idle*"
+		},
+}
+}

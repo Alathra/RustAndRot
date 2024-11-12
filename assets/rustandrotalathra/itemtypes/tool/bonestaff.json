@@ -1,0 +1,71 @@
+{
+	code: "bonestaff",
+	shape: { base: "rustandrotalathra:item/tool/bonestaff" },
+	textures: {
+		"bone": { base: "game:block/creature/bone.png" },
+		"human": { base: "game:block/creature/bone/human.png" },
+		"human-inside": { base: "game:block/creature/bone/human-inside.png" },
+		"leather": { base: "game:item/tool/shield/leather/plain.png" }
+	},
+	heldTpHitAnimation: "falx",
+	attackRange: 2,
+	tooltier: 5,
+	attackPower: 5.5,
+	attributes: {
+		heldItemPitchFollow: 0.9,
+		rackable: true,
+		toolrackTransform: {
+			translation: { x: -0, y: 0.4, z: 0.1 },
+			rotation: { x: 0, y: -81, z: -33 },
+			scale: 0.91
+		},
+			groundStorageTransform: {
+				translation: { x: -0.2, y: 0.2, z: -0 },
+				rotation: { x: -60, y: -6, z: 18 },
+				scale: 0.64
+			}
+	},
+	behaviors: [{ 
+		name: "GroundStorable",
+		properties: {
+			layout: 'WallHalves',
+			wallOffYByType: {
+				"*": 1
+			},
+			sprintKey: true,
+			selectionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.1, z2: 1 },
+			collisionBox: { x1: 0, y1: 0, z1: 0, x2: 0, y2: 0, z2: 0 },
+		}
+	}, { name: "AnimationAuthoritative" }],
+	creativeinventory: { "general": ["*"], "items": ["*"] },
+	durability: 1100,
+	creativeinventory: { 
+		"general": ["*"], 
+		"items": ["*"], 
+		"tools": ["*"],
+		"rustandrotalathra": ["*"] },
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 72, y: 143, z: -30 },
+		origin: { x: 0.5, y: 0.3, z: 0.5 },
+		scale: 1.53
+	},
+	guiTransform: {
+		translation: { x: 4, y: 5, z: 0 },
+		rotation: { x: -53, y: 34, z: -9 },
+		origin: { x: 0.58, y: 0.19, z: 0.44 },
+		scale: 1.2
+	},
+	tpHandTransform: {
+		translation: { x: -1.22, y: 0.06, z: -0.97 },
+		rotation: { x: -88, y: -85, z: 159 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 0.5899
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.3
+	}
+}

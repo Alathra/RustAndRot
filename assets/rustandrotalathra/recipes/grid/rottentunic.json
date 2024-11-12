@@ -1,0 +1,28 @@
+[
+{
+	ingredientPattern: "WRW,WPW,WRW",
+	ingredients: {
+		"W": { type: "item", code: "rustandrotalathra:rottenskin", quantity: 3 },
+		"P": { type: "item", code: "game:hide-pelt-large", quantity: 3 },
+		"R": { type: "item", code: "game:rot", quantity: 5 },
+	},
+	width: 3,
+	height: 3,
+	"shapeless": false,
+	name: "Rotten Tunic",
+	output: { type: "item", code: "rustandrotalathra:rotarmor-body-rottunic"  }
+},
+{
+	ingredientPattern: "WRW,WPW",
+	ingredients: {
+		"W": { type: "item", code: "rustandrotalathra:rottenskin", quantity: 1 },
+		"P": { type: "item", code: "game:hide-pelt-medium", quantity: 1 },
+		"R": { type: "item", code: "game:rot", quantity: 5 },
+	},
+	width: 3,
+	height: 2,
+	"shapeless": false,
+	name: "Rotten Hood",
+	output: { type: "item", code: "rustandrotalathra:rotarmor-head-rottunic"  }
+},
+]

@@ -1,0 +1,140 @@
+{
+	"code": "rotarmor",
+	"class": "ItemWearable",
+	"shapeByType": {
+		"rotarmor-body-rottengambeson": { "base": "rustandrotalathra:item/rottengambeson" },
+		"rotarmor-body-rottunic": { "base": "rustandrotalathra:item/rotten-tunic" },
+		"rotarmor-head-rottunic": { "base": "rustandrotalathra:item/rotten-hood" }
+	},
+    heldTpIdleAnimationByType: {  
+        "rotarmor-head-*": "holdbothhandslarge",
+	  "rotarmor-body-*": "holdunderarm"
+    },
+	"variantgroups": [
+		{ "code": "bodypart",  "states": ["head", "body", "legs"] },
+		{ "code": "construction",  "states": ["rottengambeson", "rottunic"] }
+	],
+	"skipVariants": [
+		"rotarmor-legs-rottengambeson",
+		"rotarmor-head-rottengambeson",
+		"rotarmor-legs-rottunic"
+	],
+	"storageFlags": 128,
+	"attributes": {
+		"disableElementsByType": {
+			"rotarmor-head-rottunic": ["hidehat", "ponytailhigh", "hideme", "sidehigh", "sidelow", "bangs"],
+			"*": []},
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"rotarmor-head-*": "armorhead",
+			"rotarmor-body-*": "armorbody"
+		},
+		"defaultProtLoss": {
+			"perTierRelativeProtectionLoss": [0.025, 0.15],
+			"perTierFlatDamageReductionLoss": [0.1, 0.2]
+		},
+		"protectionModifiersByType": {
+			"rotarmor-body-rottengambeson": {
+				"relativeProtection": 0.7,
+				"flatDamageReduction": 1.1,
+				"protectionTier": 2
+			},
+			"rotarmor-body-rottunic": {
+				"relativeProtection": 0.4,
+				"flatDamageReduction": 0.20,
+				"protectionTier": 1
+			},
+			"rotarmor-head-rottunic": {
+				"relativeProtection": 0.6,
+				"flatDamageReduction": 0.3,
+				"protectionTier": 1
+			}
+		},
+		"statModifiersByType": {
+			"rotarmor-body-rottengambeson": {
+				"walkSpeed": -0.01,
+				"healingeffectivness": -0.15,
+				"hungerrate": 0.03
+			},
+			"rotarmor-body-rottunic": {
+				"walkSpeed": 0.15,
+				"healingeffectivness": -0.30,
+				"hungerrate": 0.05
+			},
+			"rotarmor-head-rottunic": {
+				"walkSpeed": 0.15,
+				"healingeffectivness": -0.30,
+				"hungerrate": 0.05
+			}
+		}
+	},
+	"texturesByType": {
+		"rotarmor-body-rottengambeson": {
+			"seraph": { "base": "game:block/transparent" },
+			"gland": { "base": "game:item/resource/rot/rot-solids" },
+			"material": { "base": "game:entity/humanoid/serapharmor/sewn/linen" }
+		},
+		"rotarmor-body-rottunic": {
+			"seraph": { "base": "game:block/transparent" },
+			"material": { "base": "rustandrotalathra:entity/wearable/rottentunic" }
+		},
+		"rotarmor-head-rottunic": {
+			"seraph": { "base": "game:block/transparent" },
+			"material": { "base": "rustandrotalathra:entity/wearable/rottenhood" }
+		}
+	},
+	"creativeinventory": {
+		"general": ["*"],
+		"items": ["*"],
+		"clothing": ["*"],
+		"rustandrotalathra": ["*"]
+	},
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"rotarmor-*-rottunic": 500,
+		"rotarmor-body-rottengambeson": 950
+	},
+	"fpHandTransform": {
+		"translation": { "x": 0.4, "y": -1.2, "z": -0.5 },
+		"rotation": { "x": 163, "y": -111, "z": -180 },
+		"origin": { "x": 0.5, "y": 1.6, "z": 0.5 },
+		"scale": 2.15
+	},
+	"tpHandTransformByType": {
+		"rotarmor-head-*": {
+				translation: { x: 1, y: -1.1, z: -0.6 },
+				rotation: { x: 180, y: -14, z: -114 },
+				origin: { x: 0, y: 0, z: 0 },
+				scale: 0.86
+			},
+		"rotarmor-body-*": {
+			translation: { x: -1, y: -1.9, z: -0.5 },
+			rotation: { x: 97, y: -168, z: 94 },
+			origin: { x: 0.5, y: 1.5, z: 0.5 },
+			scale: 0.67
+		}
+	},
+	"guiTransformByType": {
+		"rotarmor-head-rottunic": {
+				translation: { x: 40.3, y: 43, z: -13.9 },
+				rotation: { x: 29, y: -109, z: -124 },
+				scale: 1.97
+		},
+		"rotarmor-body-rottunic": {
+			translation: { x: 15, y: 15, z: -1 },
+			rotation: { x: 54, y: -90, z: -116 },
+			scale: 1.31
+		},
+		"rotarmor-body-rottengambeson": {
+			translation: { x: 15, y: 15, z: -1 },
+			rotation: { x: 54, y: -90, z: -116 },
+			scale: 1.31
+		}
+	},
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 90 },
+		"origin": { "x": 0.34, "y": 1.12, "z": 0.5 },
+		"scale": 3.1
+	}
+}

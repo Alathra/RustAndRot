@@ -1,0 +1,1024 @@
+{
+	"editor": {
+		"collapsedPaths": "Root/UpperFootR3,Root/Mass/Leftbody,Root/LowerTorso2,Root/UpperFootR2,Root/LowerTorso,Root/Leftbody/UpperTorso,Root/UpperFootR,Root/Mass,Root/LowerTorso/UpperFootR,Root/Leftbody",
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 64,
+	"textureHeight": 64,
+	"textureSizes": {
+		"trader": [64,64]
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "Mass1",
+			"from": [ 4.4447, 4.6801, 3.8402 ],
+			"to": [ 12.8447, 10.6801, 13.0802 ],
+			"autoUnwrap": false,
+			"uv": [ 15.5, 22.5 ],
+			"rotationOrigin": [ 5.6401, 8.8801, 5.6402 ],
+			"rotationX": 2.996,
+			"rotationY": 0.157,
+			"rotationZ": -2.004,
+			"faces": {
+				"north": { "texture": "#trader", "uv": [ 53.0, 44.0, 61.0, 50.0 ] },
+				"east": { "texture": "#trader", "uv": [ 53.0, 49.0, 62.0, 55.0 ] },
+				"south": { "texture": "#trader", "uv": [ 53.0, 54.0, 61.0, 60.0 ] },
+				"west": { "texture": "#trader", "uv": [ 53.0, 58.5, 62.0, 64.5 ] },
+				"up": { "texture": "#trader", "uv": [ 55.0, 21.5, 63.0, 30.5 ], "rotation": 180 },
+				"down": { "texture": "#trader", "uv": [ 55.5, 21.5, 63.5, 30.5 ] }
+			},
+			"children": [
+				{
+					"name": "UpperFootR",
+					"from": [ 0.2967, 0.0923, 4.3073 ],
+					"to": [ 2.6967, 4.8923, 6.8673 ],
+					"unwrapMode": 4,
+					"autoUnwrap": false,
+					"uv": [ 1.0, 37.5 ],
+					"rotationOrigin": [ 1.0957, 5.2963, 5.5073 ],
+					"rotationX": -39.241,
+					"rotationY": 64.652,
+					"rotationZ": -79.427,
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 3.0, 42.5, 5.0, 47.0 ] },
+						"east": { "texture": "#trader", "uv": [ 0.0, 42.5, 2.5, 47.0 ] },
+						"south": { "texture": "#trader", "uv": [ 10.0, 42.5, 12.0, 47.0 ] },
+						"west": { "texture": "#trader", "uv": [ 7.0, 42.5, 9.5, 47.0 ] },
+						"up": { "texture": "#trader", "uv": [ 7.0, 38.5, 9.5, 40.5 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 7.0, 48.5, 9.5, 50.5 ], "rotation": 90 }
+					},
+					"children": [
+						{
+							"name": "LowerFootR",
+							"from": [ 0.08, -5.6, 0.08 ],
+							"to": [ 2.32, 0.8, 2.48 ],
+							"unwrapMode": 4,
+							"autoUnwrap": false,
+							"uv": [ 1.5, 47.5 ],
+							"rotationOrigin": [ 1.68, 0.8, 1.12 ],
+							"rotationY": 8.0,
+							"rotationZ": 108.0,
+							"faces": {
+								"north": { "texture": "#trader", "uv": [ 3.5, 52.5, 5.5, 58.9 ] },
+								"east": { "texture": "#trader", "uv": [ 0.5, 52.5, 2.9, 58.9 ] },
+								"south": { "texture": "#trader", "uv": [ 10.0, 52.5, 12.0, 58.9 ] },
+								"west": { "texture": "#trader", "uv": [ 7.0, 52.5, 9.4, 58.9 ] },
+								"up": { "texture": "#trader", "uv": [ 7.0, 49.0, 9.0, 51.0 ], "rotation": 90 },
+								"down": { "texture": "#trader", "uv": [ 7.0, 60.5, 9.0, 62.5 ], "rotation": 90 }
+							}
+						}
+					]
+				},
+				{
+					"name": "UpperFootR2",
+					"from": [ 3.3918, -2.1116, -1.5718 ],
+					"to": [ 5.7918, 2.6884, 0.9882 ],
+					"unwrapMode": 4,
+					"autoUnwrap": false,
+					"uv": [ 1.0, 37.5 ],
+					"rotationOrigin": [ 4.1908, 3.0924, -0.3718 ],
+					"rotationX": -179.991,
+					"rotationY": 0.157,
+					"rotationZ": 33.996,
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 3.0, 42.5, 5.0, 47.0 ] },
+						"east": { "texture": "#trader", "uv": [ 0.0, 42.5, 2.5, 47.0 ] },
+						"south": { "texture": "#trader", "uv": [ 10.0, 42.5, 12.0, 47.0 ] },
+						"west": { "texture": "#trader", "uv": [ 7.0, 42.5, 9.5, 47.0 ] },
+						"up": { "texture": "#trader", "uv": [ 7.0, 38.5, 9.5, 40.5 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 7.0, 48.5, 9.5, 50.5 ], "rotation": 90 }
+					},
+					"children": [
+						{
+							"name": "LowerFootR2",
+							"from": [ 0.08, -5.6, 0.08 ],
+							"to": [ 2.32, 0.8, 2.48 ],
+							"unwrapMode": 4,
+							"autoUnwrap": false,
+							"uv": [ 1.5, 47.5 ],
+							"rotationOrigin": [ 1.68, 0.8, 1.12 ],
+							"rotationY": 8.0,
+							"rotationZ": 108.0,
+							"faces": {
+								"north": { "texture": "#trader", "uv": [ 3.5, 52.5, 5.5, 58.5 ] },
+								"east": { "texture": "#trader", "uv": [ 0.5, 52.5, 2.5, 58.5 ] },
+								"south": { "texture": "#trader", "uv": [ 10.0, 52.5, 12.0, 58.5 ] },
+								"west": { "texture": "#trader", "uv": [ 7.0, 52.5, 9.0, 58.5 ] },
+								"up": { "texture": "#trader", "uv": [ 7.0, 49.0, 9.0, 51.0 ], "rotation": 90 },
+								"down": { "texture": "#trader", "uv": [ 7.0, 60.5, 9.0, 62.5 ], "rotation": 90 }
+							}
+						}
+					]
+				},
+				{
+					"name": "Mass",
+					"from": [ 1.8601, 4.9432, 1.3126 ],
+					"to": [ 5.5601, 15.2832, 6.8126 ],
+					"unwrapMode": 4,
+					"autoUnwrap": false,
+					"uv": [ 45.5, 18.0 ],
+					"rotationOrigin": [ 3.0635, 5.14, 3.1126 ],
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 49.0, 32.0 ] },
+						"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 63.0, 32.0 ] },
+						"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 59.0, 32.0 ] },
+						"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 55.0, 32.0 ] },
+						"up": { "texture": "#trader", "uv": [ 49.5, 27.5, 55.0, 31.0 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 55.0, 32.5 ], "rotation": 90 }
+					},
+					"children": [
+						{
+							"name": "Leftbody",
+							"from": [ -0.583, 6.0776, -0.3481 ],
+							"to": [ 4.417, 11.0776, 2.6519 ],
+							"unwrapMode": 4,
+							"autoUnwrap": false,
+							"uv": [ 41.5, 5.5 ],
+							"rotationOrigin": [ 1.417, 7.0776, 2.6519 ],
+							"rotationX": -5.602,
+							"rotationY": -11.359,
+							"rotationZ": 5.016,
+							"faces": {
+								"north": { "texture": "#trader", "uv": [ 50.5, 10.0, 55.5, 15.0 ] },
+								"east": { "texture": "#trader", "uv": [ 56.0, 10.0, 59.0, 15.0 ] },
+								"south": { "texture": "#trader", "uv": [ 40.0, 10.0, 45.0, 15.0 ] },
+								"west": { "texture": "#trader", "uv": [ 45.0, 10.0, 48.0, 15.0 ] },
+								"up": { "texture": "#trader", "uv": [ 35.5, 5.0, 38.5, 10.0 ], "rotation": 90 },
+								"down": { "texture": "#trader", "uv": [ 35.5, 10.0, 38.5, 15.0 ], "rotation": 90 }
+							},
+							"children": [
+								{
+									"name": "UpperTorso",
+									"from": [ 0.0, 4.3, -0.1 ],
+									"to": [ 5.0, 9.3, 3.1 ],
+									"unwrapMode": 4,
+									"autoUnwrap": false,
+									"uv": [ 41.5, 0.5 ],
+									"rotationOrigin": [ 2.0, 5.3, 2.9 ],
+									"rotationZ": -7.0,
+									"faces": {
+										"north": { "texture": "#trader", "uv": [ 50.5, 5.0, 55.5, 10.0 ] },
+										"east": { "texture": "#trader", "uv": [ 56.0, 5.0, 59.0, 10.0 ] },
+										"south": { "texture": "#trader", "uv": [ 40.0, 5.0, 45.0, 10.0 ] },
+										"west": { "texture": "#trader", "uv": [ 45.0, 5.0, 48.0, 10.0 ] },
+										"up": { "texture": "#trader", "uv": [ 45.0, 0.0, 48.0, 5.0 ], "rotation": 90 },
+										"down": { "texture": "#trader", "uv": [ 32.5, 5.0, 35.5, 10.0 ], "rotation": 90 }
+									},
+									"children": [
+										{
+											"name": "UpperArmR",
+											"from": [ 1.0, -2.1, -1.2 ],
+											"to": [ 4.0, 4.9, 0.8 ],
+											"unwrapMode": 4,
+											"autoUnwrap": false,
+											"uv": [ 32.0, 40.5 ],
+											"rotationOrigin": [ 2.0, 4.7, 0.8 ],
+											"rotationX": 39.0,
+											"rotationY": 11.0,
+											"rotationZ": -36.0,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 32.0, 43.5, 35.0, 50.5 ] },
+												"east": { "texture": "#trader", "uv": [ 30.0, 43.5, 32.0, 50.5 ] },
+												"south": { "texture": "#trader", "uv": [ 37.0, 43.5, 40.0, 50.5 ] },
+												"west": { "texture": "#trader", "uv": [ 35.0, 43.5, 37.0, 50.5 ] },
+												"up": { "texture": "#trader", "uv": [ 35.0, 40.5, 37.0, 43.5 ], "rotation": 90 },
+												"down": { "texture": "#trader", "uv": [ 35.0, 50.5, 37.0, 53.5 ], "rotation": 90 }
+											},
+											"children": [
+												{
+													"name": "LowerArmR",
+													"from": [ 0.1, -5.4, 0.0 ],
+													"to": [ 2.6, 0.6, 2.0 ],
+													"unwrapMode": 4,
+													"autoUnwrap": false,
+													"uv": [ 32.5, 51.0 ],
+													"rotationOrigin": [ 1.3, 0.6, 1.0 ],
+													"rotationX": -69.0,
+													"rotationY": 19.0,
+													"rotationZ": -28.0,
+													"faces": {
+														"north": { "texture": "#trader", "uv": [ 32.5, 53.5, 35.0, 59.5 ] },
+														"east": { "texture": "#trader", "uv": [ 30.5, 53.5, 32.5, 59.5 ] },
+														"south": { "texture": "#trader", "uv": [ 37.0, 53.5, 39.5, 59.5 ] },
+														"west": { "texture": "#trader", "uv": [ 35.0, 53.5, 37.0, 59.5 ] },
+														"up": { "texture": "#trader", "uv": [ 35.0, 51.0, 37.0, 53.5 ], "rotation": 90 },
+														"down": { "texture": "#trader", "uv": [ 35.0, 59.5, 37.0, 62.0 ], "rotation": 90 }
+													},
+													"attachmentpoints": [
+														{
+															"code": "RightHand",
+															"posX": "1.0","posY": "1.0","posZ": "1.0",
+															"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "Neck",
+											"from": [ 1.0, 3.5, 1.6 ],
+											"to": [ 4.0, 7.5, 3.1 ],
+											"unwrapMode": 4,
+											"uv": [ 12.5, 1.0 ],
+											"rotationOrigin": [ 2.5, 4.6, 3.1 ],
+											"rotationZ": 11.0,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 12.5, 1.0, 15.5, 5.0 ] },
+												"east": { "texture": "#trader", "uv": [ 20.0, 1.0, 21.5, 5.0 ] },
+												"south": { "texture": "#trader", "uv": [ 17.0, 1.0, 20.0, 5.0 ] },
+												"west": { "texture": "#trader", "uv": [ 15.5, 1.0, 17.0, 5.0 ] }
+											},
+											"children": [
+												{
+													"name": "Head",
+													"from": [ -1.0, 2.5, -1.0 ],
+													"to": [ 4.0, 7.5, 1.6 ],
+													"unwrapMode": 4,
+													"autoUnwrap": false,
+													"uv": [ 0.0, 1.5 ],
+													"rotationOrigin": [ 1.5, 2.5, 1.5 ],
+													"rotationZ": -4.0,
+													"faces": {
+														"north": { "texture": "#trader", "uv": [ 0.0, 6.5, 5.0, 11.5 ] },
+														"east": { "texture": "#trader", "uv": [ 13.0, 6.5, 15.5, 11.5 ] },
+														"south": { "texture": "#trader", "uv": [ 11.0, 6.5, 16.0, 11.5 ] },
+														"west": { "texture": "#trader", "uv": [ 5.0, 6.5, 7.5, 11.5 ] },
+														"up": { "texture": "#trader", "uv": [ 5.0, 1.5, 7.5, 6.5 ], "rotation": 90 },
+														"down": { "texture": "#trader", "uv": [ 5.0, 11.5, 7.5, 16.5 ], "rotation": 90 }
+													},
+													"children": [
+														{
+															"name": "Hair",
+															"from": [ -0.2, -6.1, -0.2 ],
+															"to": [ 5.2, 5.3, 2.7 ],
+															"unwrapMode": 4,
+															"autoUnwrap": false,
+															"uv": [ 0.0, 21.0 ],
+															"rotationOrigin": [ 1.9, -1.0, 1.9 ],
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 0.5, 26.0, 5.5, 37.0 ] },
+																"east": { "texture": "#trader", "uv": [ 12.5, 26.0, 15.0, 37.0 ] },
+																"south": { "texture": "#trader", "uv": [ 13.5, 30.5, 18.5, 41.5 ] },
+																"west": { "texture": "#trader", "uv": [ 5.0, 26.0, 7.5, 37.0 ] },
+																"up": { "texture": "#trader", "uv": [ 5.0, 21.0, 7.5, 26.0 ], "rotation": 90 }
+															}
+														},
+														{
+															"name": "Massmid",
+															"from": [ 0.9449, 1.5145, 0.9133 ],
+															"to": [ 2.4449, 2.5145, 5.9133 ],
+															"unwrapMode": 4,
+															"autoUnwrap": false,
+															"uv": [ 45.5, 18.0 ],
+															"rotationOrigin": [ 2.1449, 1.7145, 3.7133 ],
+															"rotationX": -13.654,
+															"rotationY": 17.394,
+															"rotationZ": -6.281,
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 47.0, 23.0 ] },
+																"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 62.5, 23.0 ] },
+																"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 57.0, 23.0 ] },
+																"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 54.5, 23.0 ] },
+																"up": { "texture": "#trader", "uv": [ 50.0, 26.5, 55.0, 28.0 ], "rotation": 90 },
+																"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 54.5, 30.5 ], "rotation": 90 }
+															}
+														},
+														{
+															"name": "Massmid3",
+															"from": [ 3.5123, 1.6799, 0.4326 ],
+															"to": [ 4.6123, 2.2799, 5.4326 ],
+															"unwrapMode": 4,
+															"autoUnwrap": false,
+															"uv": [ 45.5, 18.0 ],
+															"rotationOrigin": [ 4.7123, 1.8799, 3.2326 ],
+															"rotationX": 38.123,
+															"rotationY": 32.228,
+															"rotationZ": -7.053,
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 46.5, 22.5 ] },
+																"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 62.5, 22.5 ] },
+																"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 56.5, 22.5 ] },
+																"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 54.5, 22.5 ] },
+																"up": { "texture": "#trader", "uv": [ 50.0, 26.0, 55.0, 27.0 ], "rotation": 90 },
+																"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 54.5, 30.0 ], "rotation": 90 }
+															}
+														},
+														{
+															"name": "Massmid4",
+															"from": [ 0.8204, -0.479, 0.8106 ],
+															"to": [ 2.3204, 0.521, 5.8106 ],
+															"unwrapMode": 4,
+															"autoUnwrap": false,
+															"uv": [ 45.5, 18.0 ],
+															"rotationOrigin": [ 2.0204, -0.279, 3.6106 ],
+															"rotationX": 10.238,
+															"rotationY": 16.349,
+															"rotationZ": -10.872,
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 47.0, 23.0 ] },
+																"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 62.5, 23.0 ] },
+																"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 57.0, 23.0 ] },
+																"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 54.5, 23.0 ] },
+																"up": { "texture": "#trader", "uv": [ 49.5, 28.0, 54.5, 29.5 ], "rotation": 90 },
+																"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 54.5, 30.5 ], "rotation": 90 }
+															}
+														}
+													],
+													"attachmentpoints": [
+														{
+															"code": "Eyes",
+															"posX": "0.0","posY": "2.5","posZ": "2.5",
+															"rotationX": "0.0","rotationY": "-90.0","rotationZ": "0.0"
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "Massmid2",
+											"from": [ 2.3749, 3.5615, 0.9834 ],
+											"to": [ 3.8749, 4.8615, 5.9834 ],
+											"unwrapMode": 4,
+											"autoUnwrap": false,
+											"uv": [ 45.5, 18.0 ],
+											"rotationOrigin": [ 3.5749, 3.7615, 3.7834 ],
+											"rotationX": 5.011,
+											"rotationY": 17.33,
+											"rotationZ": -3.029,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 47.0, 23.0 ] },
+												"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 62.5, 23.0 ] },
+												"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 57.0, 23.0 ] },
+												"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 54.5, 23.0 ] },
+												"up": { "texture": "#trader", "uv": [ 50.0, 27.5, 55.0, 29.0 ], "rotation": 90 },
+												"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 54.5, 30.5 ], "rotation": 90 }
+											}
+										},
+										{
+											"name": "Massmid1",
+											"from": [ 0.8893, 0.4544, 1.1537 ],
+											"to": [ 2.3893, 1.4544, 6.1537 ],
+											"unwrapMode": 4,
+											"autoUnwrap": false,
+											"uv": [ 45.5, 18.0 ],
+											"rotationOrigin": [ 2.0893, 0.6544, 3.9537 ],
+											"rotationX": 42.515,
+											"rotationY": 16.825,
+											"rotationZ": -10.526,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 45.5, 22.0, 47.0, 23.0 ] },
+												"east": { "texture": "#trader", "uv": [ 57.5, 22.0, 62.5, 23.0 ] },
+												"south": { "texture": "#trader", "uv": [ 55.5, 22.0, 57.0, 23.0 ] },
+												"west": { "texture": "#trader", "uv": [ 49.5, 22.0, 54.5, 23.0 ] },
+												"up": { "texture": "#trader", "uv": [ 49.5, 26.5, 54.5, 28.0 ], "rotation": 90 },
+												"down": { "texture": "#trader", "uv": [ 49.5, 29.0, 54.5, 30.5 ], "rotation": 90 }
+											}
+										}
+									]
+								},
+								{
+									"name": "FrontShirtTile",
+									"from": [ 0.0, -6.0, 0.0 ],
+									"to": [ 2.0, 0.0, 3.0 ],
+									"unwrapMode": 4,
+									"uv": [ 43.0, 15.0 ],
+									"rotationOrigin": [ 0.0, 0.0, 3.0 ],
+									"rotationZ": -3.0,
+									"faces": {
+										"north": { "texture": "#trader", "uv": [ 43.0, 15.0, 45.0, 21.0 ] },
+										"south": { "texture": "#trader", "uv": [ 48.0, 15.0, 50.0, 21.0 ] },
+										"west": { "texture": "#trader", "uv": [ 45.0, 15.0, 48.0, 21.0 ] }
+									}
+								},
+								{
+									"name": "Rightbody",
+									"from": [ 0.5004, -0.1834, 2.8895 ],
+									"to": [ 5.5004, 4.8166, 5.8895 ],
+									"unwrapMode": 4,
+									"autoUnwrap": false,
+									"uv": [ 41.5, 5.5 ],
+									"rotationOrigin": [ 2.5004, -0.1834, 5.8895 ],
+									"rotationX": 12.494,
+									"rotationY": 18.166,
+									"rotationZ": -5.298,
+									"faces": {
+										"north": { "texture": "#trader", "uv": [ 40.0, 10.0, 45.0, 15.0 ] },
+										"east": { "texture": "#trader", "uv": [ 56.0, 10.0, 59.0, 15.0 ] },
+										"south": { "texture": "#trader", "uv": [ 51.0, 10.0, 56.0, 15.0 ] },
+										"west": { "texture": "#trader", "uv": [ 48.0, 10.0, 51.0, 15.0 ] },
+										"up": { "texture": "#trader", "uv": [ 32.5, 5.0, 35.5, 10.0 ], "rotation": 90 },
+										"down": { "texture": "#trader", "uv": [ 32.5, 10.0, 35.5, 15.0 ], "rotation": 90 }
+									},
+									"children": [
+										{
+											"name": "UpperTorso2",
+											"from": [ 0.0, 4.3, -0.1 ],
+											"to": [ 5.0, 9.3, 3.1 ],
+											"unwrapMode": 4,
+											"autoUnwrap": false,
+											"uv": [ 41.5, 0.5 ],
+											"rotationOrigin": [ 2.0, 5.3, 2.9 ],
+											"rotationZ": -7.0,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 40.0, 5.0, 45.0, 10.0 ] },
+												"east": { "texture": "#trader", "uv": [ 56.0, 5.0, 59.0, 10.0 ] },
+												"south": { "texture": "#trader", "uv": [ 51.0, 5.0, 56.0, 10.0 ] },
+												"west": { "texture": "#trader", "uv": [ 48.0, 5.0, 51.0, 10.0 ] },
+												"up": { "texture": "#trader", "uv": [ 45.0, 0.0, 48.0, 5.0 ], "rotation": 90 },
+												"down": { "texture": "#trader", "uv": [ 32.5, 5.0, 35.5, 10.0 ], "rotation": 90 }
+											},
+											"children": [
+												{
+													"name": "Neck2",
+													"from": [ 1.0, 3.5, 0.1 ],
+													"to": [ 4.0, 7.5, 1.6 ],
+													"unwrapMode": 4,
+													"uv": [ 12.5, 1.0 ],
+													"rotationOrigin": [ 2.5, 4.6, 1.6 ],
+													"rotationZ": 11.0,
+													"faces": {
+														"north": { "texture": "#trader", "uv": [ 12.5, 1.0, 15.5, 5.0 ] },
+														"east": { "texture": "#trader", "uv": [ 20.0, 1.0, 21.5, 5.0 ] },
+														"south": { "texture": "#trader", "uv": [ 17.0, 1.0, 20.0, 5.0 ] },
+														"west": { "texture": "#trader", "uv": [ 15.5, 1.0, 17.0, 5.0 ] }
+													},
+													"children": [
+														{
+															"name": "Head2",
+															"from": [ -1.0, 2.5, -0.1 ],
+															"to": [ 4.0, 7.5, 2.5 ],
+															"unwrapMode": 4,
+															"autoUnwrap": false,
+															"uv": [ 2.5, 1.5 ],
+															"rotationOrigin": [ 1.5, 2.5, 2.4 ],
+															"rotationZ": -4.0,
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 12.0, 6.5, 17.0, 11.5 ] },
+																"east": { "texture": "#trader", "uv": [ 17.5, 6.5, 20.0, 11.5 ] },
+																"south": { "texture": "#trader", "uv": [ 0.0, 6.5, 5.0, 11.5 ] },
+																"west": { "texture": "#trader", "uv": [ 7.5, 6.5, 10.0, 11.5 ] },
+																"up": { "texture": "#trader", "uv": [ 7.5, 1.5, 10.0, 6.5 ], "rotation": 90 },
+																"down": { "texture": "#trader", "uv": [ 7.5, 11.5, 10.0, 16.5 ], "rotation": 90 }
+															},
+															"children": [
+																{
+																	"name": "Hair2",
+																	"from": [ -0.2, -6.1, -0.2 ],
+																	"to": [ 5.2, 5.3, 2.7 ],
+																	"unwrapMode": 4,
+																	"autoUnwrap": false,
+																	"uv": [ 2.5, 21.0 ],
+																	"rotationOrigin": [ 1.9, -1.0, 1.9 ],
+																	"faces": {
+																		"north": { "texture": "#trader", "uv": [ 0.5, 30.5, 5.5, 41.5 ] },
+																		"east": { "texture": "#trader", "uv": [ 15.0, 26.0, 17.5, 37.0 ] },
+																		"south": { "texture": "#trader", "uv": [ 10.0, 26.0, 15.0, 37.0 ] },
+																		"west": { "texture": "#trader", "uv": [ 7.5, 26.0, 10.0, 37.0 ] },
+																		"up": { "texture": "#trader", "uv": [ 7.5, 21.0, 10.0, 26.0 ], "rotation": 90 }
+																	}
+																}
+															]
+														}
+													]
+												},
+												{
+													"name": "UpperArmL",
+													"from": [ 1.0, -2.1, 2.8 ],
+													"to": [ 4.0, 4.9, 4.8 ],
+													"unwrapMode": 4,
+													"uv": [ 41.0, 40.5 ],
+													"rotationOrigin": [ 2.0, 4.7, 2.8 ],
+													"rotationX": -42.0,
+													"rotationZ": -19.0,
+													"faces": {
+														"north": { "texture": "#trader", "uv": [ 41.0, 43.5, 44.0, 50.5 ] },
+														"east": { "texture": "#trader", "uv": [ 49.0, 43.5, 51.0, 50.5 ] },
+														"south": { "texture": "#trader", "uv": [ 46.0, 43.5, 49.0, 50.5 ] },
+														"west": { "texture": "#trader", "uv": [ 44.0, 43.5, 46.0, 50.5 ] },
+														"up": { "texture": "#trader", "uv": [ 44.0, 40.5, 46.0, 43.5 ], "rotation": 90 },
+														"down": { "texture": "#trader", "uv": [ 44.0, 50.5, 46.0, 53.5 ], "rotation": 90 }
+													},
+													"children": [
+														{
+															"name": "LowerArmL",
+															"from": [ 0.2, -5.2, 0.0 ],
+															"to": [ 2.7, 0.8, 2.0 ],
+															"unwrapMode": 4,
+															"uv": [ 41.5, 51.5 ],
+															"rotationOrigin": [ 1.4, 0.8, 1.0 ],
+															"rotationX": 8.0,
+															"rotationY": -47.0,
+															"rotationZ": -94.0,
+															"faces": {
+																"north": { "texture": "#trader", "uv": [ 41.5, 54.0, 44.0, 60.0 ] },
+																"east": { "texture": "#trader", "uv": [ 48.5, 54.0, 50.5, 60.0 ] },
+																"south": { "texture": "#trader", "uv": [ 46.0, 54.0, 48.5, 60.0 ] },
+																"west": { "texture": "#trader", "uv": [ 44.0, 54.0, 46.0, 60.0 ] },
+																"up": { "texture": "#trader", "uv": [ 44.0, 51.5, 46.0, 54.0 ], "rotation": 90 },
+																"down": { "texture": "#trader", "uv": [ 44.0, 60.0, 46.0, 62.5 ], "rotation": 90 }
+															},
+															"attachmentpoints": [
+																{
+																	"code": "LeftHand",
+																	"posX": "1.0","posY": "1.0","posZ": "1.0",
+																	"rotationX": "0.0","rotationY": "-180.0","rotationZ": "0.0"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"name": "FrontShirtTile2",
+											"from": [ 0.0, -6.0, 0.0 ],
+											"to": [ 2.0, 0.0, 3.0 ],
+											"unwrapMode": 4,
+											"uv": [ 43.0, 15.0 ],
+											"rotationOrigin": [ 0.0, 0.0, 3.0 ],
+											"rotationZ": -3.0,
+											"faces": {
+												"north": { "texture": "#trader", "uv": [ 43.0, 15.0, 45.0, 21.0 ] },
+												"south": { "texture": "#trader", "uv": [ 48.0, 15.0, 50.0, 21.0 ] },
+												"west": { "texture": "#trader", "uv": [ 45.0, 15.0, 48.0, 21.0 ] }
+											}
+										}
+									]
+								}
+							],
+							"attachmentpoints": [
+								{
+									"code": "Center",
+									"posX": "2.5","posY": "4.0","posZ": "3.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Mass2",
+					"from": [ -0.9075, -4.8846, -0.8306 ],
+					"to": [ 9.8925, 1.1154, 10.2094 ],
+					"autoUnwrap": false,
+					"uv": [ 33.5, 23.0 ],
+					"rotationOrigin": [ 0.2879, -0.6846, 0.9694 ],
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 53.0, 43.0, 63.5, 49.0 ] },
+						"east": { "texture": "#trader", "uv": [ 52.5, 48.0, 63.5, 54.0 ] },
+						"south": { "texture": "#trader", "uv": [ 53.0, 53.5, 63.5, 59.5 ] },
+						"west": { "texture": "#trader", "uv": [ 52.5, 58.0, 63.5, 64.0 ] },
+						"up": { "texture": "#trader", "uv": [ 51.0, 30.0, 62.0, 40.5 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 45.5, 30.0, 56.5, 40.5 ], "rotation": 90 }
+					}
+				},
+				{
+					"name": "Mass3",
+					"from": [ -3.3006, -5.0311, -2.0355 ],
+					"to": [ 2.6994, 3.3689, 3.0045 ],
+					"unwrapMode": 4,
+					"autoUnwrap": false,
+					"uv": [ 45.5, 22.5 ],
+					"rotationOrigin": [ -2.1051, -0.8311, -0.2355 ],
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 45.5, 28.5, 51.5, 36.5 ] },
+						"east": { "texture": "#trader", "uv": [ 58.0, 28.5, 63.0, 36.5 ] },
+						"south": { "texture": "#trader", "uv": [ 56.5, 28.5, 62.5, 36.5 ] },
+						"west": { "texture": "#trader", "uv": [ 51.5, 28.5, 56.5, 36.5 ] },
+						"up": { "texture": "#trader", "uv": [ 51.5, 22.5, 56.5, 28.5 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 52.5, 33.5, 57.5, 39.5 ], "rotation": 90 }
+					}
+				},
+				{
+					"name": "Mass4",
+					"from": [ 5.056, -4.2994, 6.376 ],
+					"to": [ 11.056, 4.1006, 11.416 ],
+					"unwrapMode": 4,
+					"autoUnwrap": false,
+					"uv": [ 44.5, 22.5 ],
+					"rotationOrigin": [ 6.2514, -0.0994, 8.176 ],
+					"faces": {
+						"north": { "texture": "#trader", "uv": [ 45.5, 28.5, 51.5, 36.5 ] },
+						"east": { "texture": "#trader", "uv": [ 58.5, 28.5, 63.5, 36.5 ] },
+						"south": { "texture": "#trader", "uv": [ 55.5, 28.5, 61.5, 36.5 ] },
+						"west": { "texture": "#trader", "uv": [ 50.5, 28.5, 55.5, 36.5 ] },
+						"up": { "texture": "#trader", "uv": [ 50.5, 22.5, 55.5, 28.5 ], "rotation": 90 },
+						"down": { "texture": "#trader", "uv": [ 51.5, 34.0, 56.5, 40.0 ], "rotation": 90 }
+					}
+				}
+			]
+		}
+	],
+	"animations": [
+		{
+			"name": "Idle",
+			"code": "idle",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Mass": { "offsetX": 0.0, "offsetY": -0.1, "offsetZ": 0.0 },
+						"UpperTorso": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Mass3": { "offsetX": -0.2, "offsetY": -0.2, "offsetZ": 0.0 },
+						"Mass4": { "offsetX": 0.0, "offsetY": 0.1, "offsetZ": 0.0 }
+					}
+				},
+				{
+					"frame": 7,
+					"elements": {
+						"Mass": { "offsetX": 0.0, "offsetY": -0.2, "offsetZ": 0.0 },
+						"Mass3": { "offsetX": 0.0, "offsetY": -0.0, "offsetZ": 0.0 },
+						"Mass4": { "offsetX": 0.0, "offsetY": -0.1, "offsetZ": 0.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Walk",
+			"code": "walk",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Mass1": { "offsetX": 1.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 5.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 5.0 }
+					}
+				},
+				{
+					"frame": 7,
+					"elements": {
+						"Mass1": { "offsetX": -1.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -14.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -14.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Run",
+			"code": "run",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Mass1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -6.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -36.0 },
+						"LowerArmR": { "rotationX": 58.0, "rotationY": 3.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -47.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 44.0 }
+					}
+				},
+				{
+					"frame": 7,
+					"elements": {
+						"Mass1": { "offsetX": -3.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -22.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -22.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -28.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -19.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -17.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Attack",
+			"code": "attack",
+			"quantityframes": 30,
+			"onActivityStopped": "PlayTillEnd",
+			"onAnimationEnd": "Stop",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Mass3": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"Mass4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0 },
+						"UpperFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperFootR2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"Mass": { "rotationX": 8.0, "rotationY": 0.0, "rotationZ": -42.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -6.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -28.0 },
+						"UpperArmR": { "rotationX": -47.0, "rotationY": -14.0, "rotationZ": -102.0 },
+						"LowerArmR": { "rotationX": 58.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -28.0 },
+						"UpperArmL": { "rotationX": -64.0, "rotationY": 78.0, "rotationZ": -33.0 },
+						"LowerArmL": { "rotationX": -72.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Mass3": { "offsetX": 0.0, "offsetY": 0.2, "offsetZ": 0.0 },
+						"Mass4": { "offsetX": 0.0, "offsetY": -0.2, "offsetZ": 0.0 },
+						"UpperFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 8.0 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 6.0 },
+						"UpperFootR2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -3.0 }
+					}
+				},
+				{
+					"frame": 14,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 36.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"UpperArmR": { "rotationX": -19.0, "rotationY": -28.0, "rotationZ": -50.0 },
+						"LowerArmR": { "rotationX": 42.0, "rotationY": 8.0, "rotationZ": 28.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 25.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -58.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 75.0 },
+						"Mass3": { "offsetX": 0.0, "offsetY": -0.2, "offsetZ": 0.0 },
+						"Mass4": { "offsetX": 0.0, "offsetY": 0.2, "offsetZ": 0.0 },
+						"UpperFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -3.0 },
+						"UpperFootR2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Die",
+			"code": "die",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Hold",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Rightbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 7,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -33.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -14.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Rightbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -14.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 20,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": -11.0, "rotationZ": -53.0 },
+						"LowerArmR": { "rotationX": 53.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"Neck": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"Rightbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"Neck2": { "rotationX": -14.0, "rotationY": 0.0, "rotationZ": 8.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 22.0, "rotationZ": -64.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 66.0 }
+					}
+				},
+				{
+					"frame": 29,
+					"elements": {
+						"Mass": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": -11.0, "rotationZ": -53.0 },
+						"LowerArmR": { "rotationX": 53.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"Neck": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 28.0 },
+						"Rightbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"Neck2": { "rotationX": -14.0, "rotationY": 0.0, "rotationZ": 8.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 22.0, "rotationZ": -64.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 66.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Crazy",
+			"code": "crazy",
+			"quantityframes": 160,
+			"onActivityStopped": "PlayTillEnd",
+			"onAnimationEnd": "Stop",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 23,
+					"elements": {
+						"UpperArmR": { "rotationX": -33.0, "rotationY": -72.0, "rotationZ": -8.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": -17.0, "rotationZ": 3.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": -19.0, "rotationZ": 14.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 40,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": -33.0, "rotationY": -72.0, "rotationZ": -8.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 17.0, "rotationZ": 3.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": -22.0, "rotationZ": 3.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": -25.0, "rotationZ": 17.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 63,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": -19.0, "rotationY": -17.0, "rotationZ": 17.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": 19.0, "rotationZ": 25.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 14.0, "rotationZ": 17.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 8.0, "rotationZ": -11.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 86.0, "rotationZ": 17.0 }
+					}
+				},
+				{
+					"frame": 80,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": -19.0, "rotationY": -17.0, "rotationZ": 17.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": 19.0, "rotationZ": 22.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 14.0, "rotationZ": 11.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 8.0, "rotationZ": -11.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 86.0, "rotationZ": 20.0 }
+					}
+				},
+				{
+					"frame": 103,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 25.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 30.0 },
+						"UpperArmR": { "rotationX": -19.0, "rotationY": -30.0, "rotationZ": -53.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -44.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 30.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 0.0, "rotationZ": -78.0 },
+						"LowerArmL": { "rotationX": 50.0, "rotationY": 44.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 126,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 25.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 30.0 },
+						"UpperArmR": { "rotationX": -19.0, "rotationY": -30.0, "rotationZ": -53.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -44.0 },
+						"Neck": { "rotationX": 6.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"UpperTorso2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 30.0 },
+						"Neck2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 33.0 },
+						"Head2": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": 0.0, "rotationZ": -78.0 },
+						"LowerArmL": { "rotationX": 50.0, "rotationY": 44.0, "rotationZ": 0.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "throw",
+			"code": "throw",
+			"quantityframes": 40,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Stop",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Leftbody": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Massmid4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Massmid1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Rightbody": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 9,
+					"elements": {
+						"Leftbody": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -30.0 },
+						"LowerArmR": { "rotationX": 0.0, "rotationY": 47.0, "rotationZ": -42.0 },
+						"Massmid4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Massmid1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"Rightbody": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmL": { "rotationX": 0.0, "rotationY": -28.0, "rotationZ": -53.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": -30.0, "rotationZ": -11.0 }
+					}
+				},
+				{
+					"frame": 18,
+					"elements": {
+						"Leftbody": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -28.0, "rotationZ": -3.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -19.0 },
+						"LowerArmR": { "rotationX": -33.0, "rotationY": 36.0, "rotationZ": 6.0 },
+						"Massmid": { "offsetX": 0.4, "offsetY": -0.1, "offsetZ": 1.0, "rotationX": 0.0, "rotationY": 25.0, "rotationZ": 0.0 },
+						"Massmid4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 1.0, "rotationX": 0.0, "rotationY": 19.0, "rotationZ": -6.0 },
+						"Massmid1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -17.0, "rotationY": 19.0, "rotationZ": -3.0 },
+						"Rightbody": { "offsetX": 1.0, "offsetY": -0.0, "offsetZ": 2.0, "rotationX": 11.0, "rotationY": 39.0, "rotationZ": -14.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": -3.0, "rotationZ": -14.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": -33.0, "rotationZ": -14.0 }
+					}
+				},
+				{
+					"frame": 20,
+					"elements": {
+						"Leftbody": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -28.0, "rotationZ": -3.0 },
+						"UpperArmR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -19.0 },
+						"LowerArmR": { "rotationX": -33.0, "rotationY": 36.0, "rotationZ": 6.0 },
+						"Massmid": { "offsetX": 0.4, "offsetY": -0.1, "offsetZ": 1.0, "rotationX": 0.0, "rotationY": 25.0, "rotationZ": 0.0 },
+						"Massmid4": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 1.0, "rotationX": 0.0, "rotationY": 19.0, "rotationZ": -6.0 },
+						"Massmid1": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -17.0, "rotationY": 19.0, "rotationZ": -3.0 },
+						"Rightbody": { "offsetX": 1.0, "offsetY": 0.0, "offsetZ": 2.0, "rotationX": 11.0, "rotationY": 39.0, "rotationZ": -14.0 },
+						"UpperArmL": { "rotationX": 14.0, "rotationY": -3.0, "rotationZ": -14.0 },
+						"LowerArmL": { "rotationX": 0.0, "rotationY": -33.0, "rotationZ": -14.0 }
+					}
+				}
+			]
+		}
+	]
+}

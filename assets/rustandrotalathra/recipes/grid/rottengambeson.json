@@ -1,0 +1,12 @@
+{
+	ingredientPattern: "W_W,WGW",
+	ingredients: {
+		"W": { type: "item", code: "rustandrotalathra:rottenskin", quantity: 5 },
+		"G": { type: "item", code: "game:armor-body-sewn-linen", quantity: 1 },
+	},
+	width: 3,
+	height: 2,
+	"shapeless": false,
+	name: "Rotten Gambeson",
+	output: { type: "item", code: "rustandrotalathra:rotarmor-body-rottengambeson"  }
+}

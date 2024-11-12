@@ -1,0 +1,357 @@
+{
+	"code": "rotwalker",
+	"class": "EntityAgent",
+	"canClimb": true,
+	"hitboxSize": { "x": 1, "y": 1.75 },
+	"deadHitboxSize": { "x": 1.3, "y": 0.75 },
+	"eyeHeight": 1.5,
+	"drops": [],
+	"variantgroups": [
+		{ "code": "type", "states": ["normal", "deep", "blackguard"]}
+	],
+	"client": {
+		"renderer": "Shape",
+		"pitchStep": false,
+		"shapeByType": {
+			"*-normal": { "base": "rustandrotalathra:entity/land/rotten/rotwalker" },
+			"*-deep": { "base": "rustandrotalathra:entity/land/rotten/cavewalker" },
+			"*-blackguard": { "base": "rustandrotalathra:entity/land/rotten/rottenblackguard" }
+		},
+		"texturesByType": {
+			"*-normal": {
+				"seraph":  { "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten1", "alternates": [ 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten2" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten3" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten4" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten5" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten6" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/body/rotten7" }
+					]},
+				"face":  { "base": "rustandrotalathra:entity/rotten/rotwalker/face/face1", "alternates": [ 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face2" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face3" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face4" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face5" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face6" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/face/face7" }
+							]},
+				"hair":  { "base": "rustandrotalathra:entity/rotten/rotwalker/hair/mask", "alternates": [ 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair2" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair3" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair4" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair5" }, 
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair6" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair7" },
+					{ "base": "rustandrotalathra:entity/rotten/rotwalker/hair/hair1" }
+					]}
+				},
+			"*-deep": {
+				"seraph": { "base": "rustandrotalathra:entity/rotten/rotwalker/body/rottencave1"},
+				"metal": { "base": "game:item/tool/material/blackbronze" },
+				"handle": { "base": "game:item/tool/material/ebony" },
+				"ceramic": { "base": "game:block/clay/ceramic"},
+				"candle": { "base": "game:block/candle" },
+				"string": { "base": "game:item/tool/material/string"}
+				},
+			"*-blackguard": {
+				"blackguard-damaged": { "base": "rustandrotalathra:entity/rotten/rotwalker/blackguard-damaged" },
+				"seraph": { "base": "rustandrotalathra:entity/rotten/miasma/miasma" },
+				"metal": { "base": "game:item/tool/sword-blackguard" },
+				"handle": { "base": "game:item/tool/sword-blackguard" },
+				"blackbronze5": { "base": "game:block/metal/plate/blackbronze"},
+				"aged":  { "base":	"game:block/wood/debarked/aged"},
+				"pattern-blackguard": { "base":	"game:item/tool/shield/pattern-blackguard"},
+				"blackbronze": { "base": "game:block/metal/ingot/blackbronze"}
+				}},
+		"behaviors": [
+			{ "code": "repulseagents" }, 
+			{ "code": "controlledphysics", "stepHeight": 1.1251 }, 
+			{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+			{ "code": "interpolateposition" },
+			{ "code": "harvestable", "duration": 2}
+		],
+		"animations": [
+			{
+				"code": "hurt",
+				"animation": "hurt", 
+				"animationSpeed": 2.2,
+				"weight": 10,
+				"blendMode": "AddAverage" 
+			},
+			{
+				"code": "leap",
+				"animation": "leap", 
+				"animationSpeed": 1,
+				"weight": 10,
+				"blendMode": "AddAverage" ,
+				"triggeredBy": { "onControls": ["jump"] }
+			},
+			{
+				"code": "die",
+				"animation": "die", 
+				"animationSpeed": 1.25,
+				"weight": 10,
+				"blendMode": "Average",
+				"triggeredBy": { "onControls": ["dead"] }
+			},
+			{ 
+				"code": "idle", 
+				"animation": "idle",
+				"blendMode": "AddAverage",
+				"easeOutSpeed": 4,
+				"triggeredBy": { "defaultAnim": true }
+			}
+		]
+	},
+	"server": {
+		"behaviors": [
+			{ "code": "repulseagents" }, 
+			{ "code": "controlledphysics", "stepHeight": 1.1251 },
+			{ "code": "despawn", "minPlayerDistance": 8, "belowLightLevel": 8, "minSeconds": 300 },
+			{ "code": "health", 
+			"currenthealthByType": {
+				"*-normal": 14,
+				"*-deep": 18,
+				"*-blackguard": 32
+			},
+			"maxhealthByType": {
+				"*-normal": 14,
+				"*-deep": 18,
+				"*-blackguard": 32
+			}
+		},
+		{ "code": "deaddecay", "hoursToDecay": 3, "decayedBlock": "drycarcass-humanoid2" },
+		{ "code": "floatupwhenstuck", "onlyWhenDead": true },
+		{ "code": "despawn", "minPlayerDistance": 32, "minSeconds": 30 },
+		{ "code": "harvestable",  "duration": 2, "dropsByType": {
+				"*-normal": [
+					{
+						"type": "item",
+						"code": "gear-rusty",
+						"dropModbyStat": "rustyGearDropRate",
+						"quantity": { "avg": 0.01, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "rot",
+						"quantity": { "dist":"uniform", "avg": 1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "rustandrotalathra:rottenskin",
+						"quantity": { "dist":"uniform", "avg": 0.25, "var": 0.5 }
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": { "dist":"uniform", "avg": 0.1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "clutter-skull/humanoid",
+						"quantity": { "avg": 0.6, "var": 0 }
+					}],
+				"*-deep": [ 
+					{
+						"type": "item",
+						"code": "gear-rusty",
+						"dropModbyStat": "rustyGearDropRate",
+						"quantity": { "avg": 0.01, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "rustandrotalathra:rottenskin",
+						"quantity": { "dist":"uniform", "avg": 0.25, "var": 0.5 }
+					},
+					{
+						"type": "item",
+						"code": "rot",
+						"quantity": { "dist":"uniform", "avg": 1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": { "dist":"uniform", "avg": 0.1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "clutter-skull/humanoid",
+						"quantity": { "avg": 0.6, "var": 0 }
+					}
+				],
+				"*-blackguard": [ 
+					{
+						"type": "item",
+						"code": "gear-rusty",
+						"dropModbyStat": "rustyGearDropRate",
+						"quantity": { "avg": 0.01, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "rustandrotalathra:rottenskin",
+						"quantity": { "dist":"uniform", "avg": 1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "armor-body-antique-blackguard-broken",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "armor-body-antique-blackguard-damaged",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "armor-head-antique-blackguard-broken",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "armor-head-antique-blackguard-damaged",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "armor-legs-antique-blackguard-broken",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "armor-legs-antique-blackguard-damaged",
+						"quantity": { "avg": 0.0133, "var": 0 }
+					},
+					{
+						"type": "item",
+						"code": "rot",
+						"quantity": { "dist":"uniform", "avg": 1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "bone",
+						"quantity": { "dist":"uniform", "avg": 0.1, "var": 3 }
+					},
+					{
+						"type": "item",
+						"code": "clutter-skull/humanoid",
+						"quantity": { "avg": 0.6, "var": 0 }
+					}
+				] }	},
+		{ "code": "emotionstates",	"states": [	{ "code": "aggressiveondamage", "duration": 30, "chance": 1, "slot": 2, "priority": 2, "accumType": "noaccum" }]
+		},
+			{
+				"code": "taskai",
+				"aitasks": [
+					{
+						"code": "meleeattack",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 2,
+						"damageByType": {
+						        "*-normal": 2.5,
+						        "*-deep": 5,
+								"*-blackguard": 10 },
+						  "damageTierByType": {
+						        "*-normal": 0,
+						        "*-deep": 1,
+								"*-blackguard": 3 },
+						   "damageTypeByType": {
+								"*": "BluntAttack",
+								"*-deep": "PiercingAttack",
+								"*-blackguard": "SlashingAttack",
+						 },
+						"slot": 1,
+						"mincooldown": 500, 
+						"maxcooldown": 1750, 
+						"minDist": 1.6,
+						"attackDurationMs": 1000,
+						"damagePlayerAtMs": 400,
+						"animation": "Attack1",
+						"animationSpeed": 1,
+						"sound": "rustandrotalathra:creature/rotwalker/attack*"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 1.51,
+						"movespeed": 0.045,
+						"leapAtTarget": true,
+						"leapAnimation": true,
+						"leapChance": 0.01,
+						"seekingRange": 15,
+						"animation": "Run",
+						"animationSpeed": 1,
+						"sound": "rustandrotalathra:creature/rotwalker/idle*"
+					},
+					{
+						"code": "seekentity",
+						"entityCodes": ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						"priority": 1.49,
+						"movespeed": 0.045,
+						"seekingRange": 15,
+						"animation": "Run",
+						"leapAtTarget": true,
+						"leapAnimation": true,
+						"leapChance": 0.01,
+						"animationSpeed": 2,
+						"whenInEmotionState": "aggressiveondamage",
+						"sound": "rustandrotalathra:creature/rotwalker/idle*"
+					},
+					{
+						"code": "getoutofwater",
+						"priority": 1.4,
+						"movespeed": 0.015,
+						"animation": "Walk",
+						"animationSpeed": 2.2
+					},
+					{
+						"code": "wander", 
+						"priority": 1.0, 
+						"priorityForCancel": 1.35,
+						"movespeed": 0.006,
+						"animation": "Walk",
+						"preferredLightLevel": 20
+					},
+					{ 
+						"code": "lookaround", 
+						"priority": 0.5
+					}
+				]
+			}
+		],
+		"spawnconditions": {
+			"runtime": {
+				"group": "hostile",
+				"chance": 0.0005,
+				"minDistanceToPlayer": 40,
+				"maxQuantityByType": {
+					"*-normal": 7,
+					"*-deep": 4,
+					"*-blackguard": 1
+				},
+				"minYByType": {
+					"*-normal": 0.85,
+					"*-deep": 0.52,
+					"*-blackguard": 0
+				},
+				"maxYByType": {
+					"*-normal": 2,
+					"*-deep": 0.89,
+					"*-blackguard": 2
+				},
+				"maxLightLevel": 4,
+				"minLightLevel": 0,
+				"lightLevelType": "onlyblocklight",
+				"groupSize": { "dist": "uniform", "avg": 1.5, "var": 0.5 },
+				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"]
+			}
+		}
+	},
+	"idleSoundchance": 0.45,
+	"soundsByType": {
+		"*": {
+			"hurt": "rustandrotalathra:creature/rotwalker/hurt*",
+			"death": "rustandrotalathra:creature/rotwalker/death",
+			"idle": "rustandrotalathra:creature/rotwalker/idle*"
+		}
+	}
+}
