@@ -1,0 +1,18 @@
+[
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/0/entityCodes/1",
+		"value": ["bandit-*", "deserter-*", "hound-*", "looter", "poacher-*", "yeoman-archer"],
+		"side": "Server",
+		"dependsOn": [ { "modid": "outlawmod" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotbeast.json"
+	},
+	{
+		"op": "addmerge",
+		"path": "/server/behaviors/9/aitasks/1/entityCodes",
+		"value": ["bandit-*", "deserter-*", "hound-*", "looter", "poacher-*", "yeoman-archer"],
+		"side": "Server",
+		"dependsOn": [ { "modid": "outlawmod" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotbeast.json"
+	}
+]

@@ -1,0 +1,23 @@
+{
+	code: "thrownskull",
+	class: "EntityThrownStone",
+	hitboxSize: { x: 0.75, y: 0.5 },
+	deadHitboxSize: { x: 0.75, y: 0.5 },
+	client: {
+		renderer: "Shape",
+		shape: { base: "game:item/clutter/skull/humanoid" },
+		size: 1,
+		behaviors: [{ code: "passivephysics" }, { code: "interpolateposition" }, { code: "floatupwhenstuck", pushVelocityMul: 0.25 }],
+	},
+	server: {
+		behaviors: [{ code: "passivephysics" }, { code: "despawn", minSeconds: 300 }, { code: "floatupwhenstuck", pushVelocityMul: 0.25 }],
+	},
+	sounds: {
+	},
+	attributes: {
+		physics: {
+			groundDragFactor: 1,
+			airDragFactor: 0.25
+		}
+	},
+}

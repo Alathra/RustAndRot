@@ -1,0 +1,203 @@
+{
+	code: "rotpillar",
+	class: "EntityAgent",
+	hitboxSize: { x: 1.2, y: 2 },
+	deadHitboxSize: { x: 1.2, y: 2 },
+	eyeHeight: 2,
+	drops: [],
+	client: {
+		renderer: "Shape",
+		shape: { base: "rustandrotalathra:entity/land/rotten/rotpillar" },
+		texture: { base: "rustandrotalathra:entity/rotten/rotpillar/rotpillar", alternates: [ 
+			{ base: "rustandrotalathra:entity/rotten/rotpillar/rotpillar1" }, 
+			{ base: "rustandrotalathra:entity/rotten/rotpillar/rotpillar2" }, 
+			{ base: "rustandrotalathra:entity/rotten/rotpillar/rotpillar3" }, 
+			] 
+		},
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "controlledphysics", stepHeight: 1.1251 }, 
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "interpolateposition" },
+			{ code: "harvestable" },
+			{ code: "despawn", minPlayerDistance: 16, belowLightLevel: 8, minSeconds: 300, afterDays: 14 },
+			{ code: "ropetieable", minGeneration: 2 }
+		],
+		animations: [
+			{
+				code: "hurt",
+				animation: "hurt", 
+				animationSpeed: 2.2,
+				weight: 10,
+				blendMode: "AddAverage" 
+			},
+			{
+				code: "die",
+				animation: "die", 
+				animationSpeed: 1.25,
+				weight: 10,
+				blendMode: "Average",
+				triggeredBy: { onControls: ["dead"] }
+			},
+			{ 
+				code: "idle", 
+				animation: "idle",
+				blendMode: "AddAverage",
+				easeOutSpeed: 4,
+				triggeredBy: { defaultAnim: true },
+			},
+		]
+	},
+	server: {
+		behaviors: [
+			{ code: "repulseagents" }, 
+			{ code: "controlledphysics", stepHeight: 1.1251 },
+			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 300 },
+			{ code: "health", currenthealth: 20, maxhealth: 20, },
+			{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "drycarcass-humanoid2" },
+			{ code: "floatupwhenstuck", onlyWhenDead: true },
+			{ code: "harvestable", "duration": 2, drops: [
+					{
+						type: "item", 
+						code: "rot", 
+						quantity: { avg: 7, var: 4 } 
+					},
+					{
+						type: "item", 
+						code: "rustandrotalathra:rottenskin", 
+						quantity: { avg: 3, var: 2 } 
+					},
+					{
+						type: "item", 
+						code: "bone", 
+						quantity: { avg: 1.5, var: 0 } 
+					},
+					{
+						"type": "item",
+						"code": "insect-grub",
+						"quantity": { "avg": 1, "var": 0.25 }
+					}
+				]
+			},
+			{ 
+				code: "emotionstates",
+				states: [
+					{ code: "aggressiveondamage", duration: 30, chance: 1, slot: 2, priority: 2, accumType: "noaccum" },
+				],
+			},
+			{
+				code: "taskai",
+				aitasks: [
+					{
+						code: "meleeattack",
+						entityCodes: ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						priority: 2,
+						damage: 7,
+						damageTier: 2,
+						damageType: "SlashingAttack",
+						slot: 1,
+						mincooldown: 1500, 
+						maxcooldown: 1500, 
+						attackDurationMs: 800,
+						damagePlayerAtMs: 500,
+						animation: "Attack",
+						animationSpeed: 1,
+						sound: "rustandrotalathra:creature/rotpillar/hurt",
+					},
+					{
+						code: "throwatentity",
+						entityCodes: ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						projectileCode: "rustandrotalathra:thrownrot",
+						projectileDamage: 8,
+						damageTier: 2,
+						priority: 1.55,
+						priorityForCancel: 9,
+						mincooldown: 1000, 
+						maxcooldown: 2000, 
+						durationMs: 2166,
+						releaseAtMs: 900,
+						seekingRange: 15,
+						soundStartMs: 200,
+						soundRange: 32,
+						animationSpeed: 1.25,
+						animation: "throw",
+						immobile: true,
+						maxTurnAngleDeg: 35,
+						maxOffAngleThrowDeg: 85,
+						sound: "rustandrotalathra:creature/rotpillar/spit"
+					},
+					{
+						code: "seekentity",
+						entityCodes: ["player", "golem-normal", "itinerant", "roamer-normal", "drifter-*"],
+						priority: 1.49,
+						movespeed: 0.04,
+						seekingRange: 15,
+						animation: "Run",
+						animationSpeed: 2,
+						whenInEmotionState: "aggressiveondamage"
+					},
+					{
+						code: "getoutofwater",
+						priority: 1.4,
+						movespeed: 0.015,
+						animation: "Walk",
+						animationSpeed: 2.2
+					},
+					{
+						code: "idle",
+						priority: 1.2,
+						priorityForCancel: 1.35,
+						minduration: 2500,
+						maxduration: 2500,
+						mincooldown: 6000,
+						maxcooldown: 20000,
+						animation: "Crazy",
+						animationSpeed: 1.25,
+						whenNotInEmotionState: "aggressiveondamage",
+						sound: "rustandrotalathra:creature/rotpillar/idle3"
+					},
+					{
+						code: "idle",
+						priority: 1.3,
+						priorityForCancel: 1.35,
+						minduration: 2500,
+						maxduration: 2500,
+						mincooldown: 6000,
+						maxcooldown: 20000,
+						animation: "Idle",
+						animationSpeed: 1.25,
+						whenNotInEmotionState: "aggressiveondamage"
+					},
+					{ 
+						code: "lookaround", 
+						priority: 0.5
+					}
+				]
+			},
+			{ code: "ropetieable", minGeneration: 2 },
+			{ code: "pettable", minGeneration: 1 }
+		],
+		"spawnconditions": {
+			"runtime": {
+				"group": "hostile",
+				"maxQuantity": 2,
+				"minY":0,
+				"maxY": 2,
+				"chance": 0.00033,
+				"minDistanceToPlayer": 40,
+				"maxLightLevel": 4,
+				"minLightLevel": 0,
+				"lightLevelType": "onlyBlockLight",
+				"groupSize": { dist: "uniform", avg: 1.5, var: 0.5 },
+				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
+				"companions": ["rotwalker-normal"]
+			}
+		}
+	},
+	sounds: {
+		hurt: "rustandrotalathra:creature/rotpillar/hurt*",
+		death: "rustandrotalathra:creature/rotpillar/death",
+		idle: "rustandrotalathra:creature/rotpillar/idle*",
+	},
+	idleSoundChance: 0.05
+}

@@ -1,0 +1,9 @@
+{
+	code: "heavytar",
+	sealHours: 24,
+	ingredients: [
+		{ type: "item", code: "sludgeportion", litres: 10 },
+		{ type: "item", code: "drifterorgan" }
+	],
+	output: { type: "item", code: "heavytar", stackSize: 3 }
+}

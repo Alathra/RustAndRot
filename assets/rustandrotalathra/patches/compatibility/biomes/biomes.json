@@ -1,0 +1,234 @@
+[
+  {
+    "file": "rustandrotalathra:entities/land/rotten/miasma.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rotten/rotbeast.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rotten/rotpillar.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rotten/rotwalker.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rust/golem.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rust/itinerant.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/land/rust/roamer.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  },
+  {
+    "file": "rustandrotalathra:entities/air/parasitic-flies.json",
+    "op": "addmerge",
+    "path": "/attributesByType",
+    "side": "Server",
+    "value": {
+      "*": {
+        "biorealm": [
+          "atlantic afrotropic",
+          "atlantic palearctic",
+          "central palearctic",
+          "eastern afrotropic",
+          "eastern palearctic",
+          "pacific palearctic",
+          "pacific nearctic",
+          "atlantic nearctic",
+          "pacific neotropic",
+          "atlantic neotropic",
+          "australasian",
+          "oceania"
+        ]
+      }
+    },
+    "dependsOn": [
+      {
+        "modid": "biomes"
+      }
+    ]
+  }
+]

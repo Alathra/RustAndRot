@@ -1,0 +1,250 @@
+[
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 3.0
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/miasma.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 3.0
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/miasma.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 10.0
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/bonemass.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 10.0
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/bonemass.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+			  "*-normal": 0.5,
+			  "*-deep": 0.8,
+			  "*-blackguard": 2.5
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotwalker.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+			  "*-normal": 0.5,
+			  "*-deep": 0.8,
+			  "*-blackguard": 2.5
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotwalker.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 1.5
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotpillar.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 0.5
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotcrawler.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 0.5
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotcrawler.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 1.5
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotpillar.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+			  "*-pig": 1,
+			  "*-wolf": 2,
+			  "*-sheep": 2.3
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotbeast.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-pig": 1,
+				"*-wolf": 2,
+				"*-sheep": 2.3
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rotten/rotbeast.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/golem.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/golem.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 2.0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/itinerant.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 2.0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/itinerant.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 5.0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/roamer.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xpByType": {
+				"*-normal": 5.0
+			}
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/roamer.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 3.0
+		},
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/mimic.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 3.0
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/mimic.json"
+	},
+	{
+		"op": "add",
+		"path": "/client/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 10
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/boiler.json"
+	},
+	{
+		"op": "add",
+		"path": "/server/behaviors/-",
+		"value": {
+			"code": "XSkillsEntity",
+			"xp": 10
+		  },
+		"dependsOn": [ { "modid": "xskills" } ],
+		"file": "rustandrotalathra:entities/land/rust/boiler.json"
+	}
+]

@@ -1,0 +1,15 @@
+{
+  "Type": 1,
+  "TextureSize": 32,
+  "Name": "Rust & Rot",
+  "Version": "1.0.0",
+  "NetworkVersion": null,
+  "Description": "New rust and rot inspired creatures",
+  "Website": "",
+  "CoreMod": false,
+  "ModID": "rustandrotalathraalathra",
+  "Authors": [ "darce" ],
+  "RequiredOnClient": true,
+  "RequiredOnServer": true,
+  "Dependencies": {}
+}

@@ -1,0 +1,164 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"gland": "item/resource/gland"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 8.0, 1.0, 9.0 ],
+			"to": [ 8.0, 1.0, 9.0 ],
+			"rotationOrigin": [ 8.0, 1.0, 9.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "glandmain",
+					"from": [ -3.0, -0.3, 0.0 ],
+					"to": [ 3.0, 3.0, 1.5 ],
+					"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+					"faces": {
+						"north": { "texture": "#gland", "uv": [ 1.0, 8.0, 7.0, 11.0 ] },
+						"east": { "texture": "#gland", "uv": [ 2.5, 5.5, 4.0, 8.5 ] },
+						"south": { "texture": "#gland", "uv": [ 0.0, 5.5, 6.0, 8.5 ] },
+						"west": { "texture": "#gland", "uv": [ 4.0, 5.5, 5.5, 8.5 ] },
+						"up": { "texture": "#gland", "uv": [ 6.0, 2.5, 12.0, 4.0 ] },
+						"down": { "texture": "#gland", "uv": [ 1.5, 2.0, 7.5, 3.5 ] }
+					},
+					"children": [
+						{
+							"name": "top",
+							"from": [ 1.0, 3.3, 0.0 ],
+							"to": [ 5.0, 4.3, 0.5 ],
+							"rotationOrigin": [ 1.0, 3.3, 0.0 ],
+							"faces": {
+								"north": { "texture": "#gland", "uv": [ 5.5, 6.0, 9.5, 7.0 ] },
+								"east": { "texture": "#gland", "uv": [ 7.0, 4.5, 7.5, 5.5 ] },
+								"south": { "texture": "#gland", "uv": [ 6.5, 5.5, 10.5, 6.5 ] },
+								"west": { "texture": "#gland", "uv": [ 4.5, 5.5, 5.0, 6.5 ] },
+								"up": { "texture": "#gland", "uv": [ 2.5, 4.0, 6.5, 4.5 ] }
+							}
+						},
+						{
+							"name": "glandfront",
+							"from": [ 1.0, 0.6, 1.5 ],
+							"to": [ 5.0, 2.5, 2.5 ],
+							"rotationOrigin": [ 1.0, 0.6, 1.5 ],
+							"faces": {
+								"east": { "texture": "#gland", "uv": [ 8.0, 6.5, 9.0, 8.0 ] },
+								"south": { "texture": "#gland", "uv": [ 9.0, 6.5, 13.0, 8.0 ] },
+								"west": { "texture": "#gland", "uv": [ 3.0, 6.5, 4.0, 8.0 ] },
+								"up": { "texture": "#gland", "uv": [ 3.5, 6.0, 7.5, 7.0 ] },
+								"down": { "texture": "#gland", "uv": [ 2.5, 1.0, 6.5, 2.0 ] }
+							}
+						},
+						{
+							"name": "left",
+							"from": [ -1.0, 0.3, -2.0 ],
+							"to": [ 0.0, 2.3, 0.5 ],
+							"rotationOrigin": [ -1.0, 0.3, -2.0 ],
+							"faces": {
+								"north": { "texture": "#gland", "uv": [ 13.0, 8.5, 14.0, 10.5 ] },
+								"south": { "texture": "#gland", "uv": [ 14.0, 6.5, 15.0, 8.5 ] },
+								"west": { "texture": "#gland", "uv": [ 7.0, 6.5, 9.5, 8.5 ] },
+								"up": { "texture": "#gland", "uv": [ 8.5, 2.5, 9.5, 5.0 ] },
+								"down": { "texture": "#gland", "uv": [ 3.5, 2.0, 4.5, 4.5 ] }
+							}
+						}
+					]
+				},
+				{
+					"name": "origin2",
+					"from": [ 0.0, 0.0, 0.0 ],
+					"to": [ 0.0, 0.0, 0.0 ],
+					"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+					"rotationX": -180.0,
+					"rotationY": 0.0,
+					"rotationZ": -180.0,
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "glandmain2",
+							"from": [ -3.0, -0.3, 0.0 ],
+							"to": [ 3.0, 3.0, 3.0 ],
+							"rotationOrigin": [ 0.0, -0.3, 0.0 ],
+							"faces": {
+								"north": { "texture": "#gland", "uv": [ 1.0, 8.0, 7.0, 11.0 ] },
+								"east": { "texture": "#gland", "uv": [ 2.5, 5.5, 5.5, 8.5 ] },
+								"south": { "texture": "#gland", "uv": [ 0.0, 5.5, 6.0, 8.5 ] },
+								"west": { "texture": "#gland", "uv": [ 4.0, 5.5, 7.0, 8.5 ] },
+								"up": { "texture": "#gland", "uv": [ 6.0, 2.5, 12.0, 5.5 ] },
+								"down": { "texture": "#gland", "uv": [ 1.5, 2.0, 7.5, 5.0 ] }
+							},
+							"children": [
+								{
+									"name": "top2",
+									"from": [ 1.0, 3.3, 0.0 ],
+									"to": [ 5.0, 4.3, 2.0 ],
+									"rotationOrigin": [ 1.0, 3.3, 0.0 ],
+									"faces": {
+										"north": { "texture": "#gland", "uv": [ 5.5, 6.0, 9.5, 7.0 ] },
+										"east": { "texture": "#gland", "uv": [ 7.0, 4.5, 9.0, 5.5 ] },
+										"south": { "texture": "#gland", "uv": [ 6.5, 5.5, 10.5, 6.5 ] },
+										"west": { "texture": "#gland", "uv": [ 4.5, 5.5, 6.5, 6.5 ] },
+										"up": { "texture": "#gland", "uv": [ 2.5, 4.0, 6.5, 6.0 ] }
+									}
+								},
+								{
+									"name": "glandfront2",
+									"from": [ 1.0, 0.6, 3.0 ],
+									"to": [ 5.0, 2.6, 4.0 ],
+									"rotationOrigin": [ 1.0, 0.6, 3.0 ],
+									"faces": {
+										"east": { "texture": "#gland", "uv": [ 8.0, 6.5, 9.0, 8.5 ] },
+										"south": { "texture": "#gland", "uv": [ 9.0, 6.5, 13.0, 8.5 ] },
+										"west": { "texture": "#gland", "uv": [ 3.0, 6.5, 4.0, 8.5 ] },
+										"up": { "texture": "#gland", "uv": [ 3.5, 6.0, 7.5, 7.0 ] },
+										"down": { "texture": "#gland", "uv": [ 2.5, 1.0, 6.5, 2.0 ] }
+									}
+								},
+								{
+									"name": "top3",
+									"from": [ 5.0, 0.0, -0.5 ],
+									"to": [ 9.0, 1.0, 2.0 ],
+									"rotationOrigin": [ 5.0, 0.0, -0.5 ],
+									"rotationZ": -180.0,
+									"faces": {
+										"north": { "texture": "#gland", "uv": [ 5.5, 6.0, 9.5, 7.0 ] },
+										"east": { "texture": "#gland", "uv": [ 7.0, 4.5, 9.5, 5.5 ] },
+										"south": { "texture": "#gland", "uv": [ 6.5, 5.5, 10.5, 6.5 ] },
+										"west": { "texture": "#gland", "uv": [ 4.5, 5.5, 7.0, 6.5 ] },
+										"up": { "texture": "#gland", "uv": [ 2.5, 4.0, 6.5, 6.5 ] }
+									}
+								}
+							]
+						},
+						{
+							"name": "left2",
+							"from": [ -4.0, 0.3, -0.6 ],
+							"to": [ -3.0, 2.3, 1.9 ],
+							"rotationOrigin": [ -4.0, 0.3, -0.6 ],
+							"rotationX": -180.0,
+							"rotationY": 180.0,
+							"rotationZ": -180.0,
+							"faces": {
+								"north": { "texture": "#gland", "uv": [ 13.0, 8.5, 14.0, 10.5 ] },
+								"south": { "texture": "#gland", "uv": [ 14.0, 6.5, 15.0, 8.5 ] },
+								"west": { "texture": "#gland", "uv": [ 7.0, 6.5, 9.5, 8.5 ] },
+								"up": { "texture": "#gland", "uv": [ 8.5, 2.5, 9.5, 5.0 ] },
+								"down": { "texture": "#gland", "uv": [ 3.5, 2.0, 4.5, 4.5 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

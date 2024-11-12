@@ -1,0 +1,227 @@
+{
+	code: "rnrcreature",
+	class: "ItemCreature",
+	maxstacksize: 64,
+	variantgroups: [
+		{ code: "type", states: [
+		 "itinerant-normal", "roamer-normal", "golem-normal", "rotwalker-normal", "rotwalker-deep", "rotwalker-blackguard", "rotpillar", "rotbeast-pig", "rotbeast-sheep", "rotbeast-wolf", "miasma", "rotcrawler", "mimic", "boiler", "bonemass"
+		] }
+	],
+
+	shapeByType: {
+		"*-itinerant-normal": { base: "rustandrotalathra:entity/land/rust/itinerant" },
+		"*-roamer-normal": { base: "rustandrotalathra:entity/land/rust/roamer" },
+		"*-golem-normal": { base: "rustandrotalathra:entity/land/rust/golem" },
+		"*-mimic": { base: "rustandrotalathra:entity/land/rust/mimic" },
+		"*-boiler": { base: "rustandrotalathra:entity/land/rust/boiler" },
+
+		"*-rotpillar": { base: "rustandrotalathra:entity/land/rotten/rotpillar" },
+		"*-rotwalker-normal": { base: "rustandrotalathra:entity/land/rotten/rotwalker" },
+		"*-rotwalker-deep": { base: "rustandrotalathra:entity/land/rotten/cavewalker" },
+		"*-rotwalker-blackguard": { base: "rustandrotalathra:entity/land/rotten/rottenblackguard" },
+		"*-rotbeast-sheep": { base: "rustandrotalathra:entity/land/rotten/sheep" },
+		"*-rotbeast-wolf": { base: "rustandrotalathra:entity/land/rotten/wolf" },
+		"*-rotbeast-pig": { base: "rustandrotalathra:entity/land/rotten/pig" },
+		"*-miasma": { base: "rustandrotalathra:entity/land/rotten/miasma" },
+		"*-rotcrawler": { base: "rustandrotalathra:entity/land/rotten/rotcrawler" },
+		"*-bonemass": { base: "rustandrotalathra:entity/land/rotten/bonemass" },
+
+	},
+	texturesByType: {
+		"*-golem-normal": {
+			"rusty3": { "base":"game:block/metal/corroded/rusty3"},
+			"faceplategolem": { "base":"rustandrotalathra:entity/rust/itinerant/faceplategolem"},
+				"black": { "base":"game:block/black"},
+				"gold": { "base":"game:block/metal/tarnished/gold"}},
+
+		"*-itinerant-normal": {
+			"seraph": { "base": "rustandrotalathra:entity/rust/itinerant/seraph"},
+			"linen": { "base": "game:block/nailtexture"},
+			"normal3": { "base": "game:block/metal/corroded/normal3"},
+			"rust2": { "base": "game:block/metal/tarnished/rust2"},
+			"rusty-iron": { "base": "game:block/metal/tarnished/rusty-iron"},
+			"iron": { "base":"game:block/metal/tarnished/iron"},
+			"nailtexture": { "base":"game:block/nailtexture"}},
+
+		"*-roamer-normal": {
+			"seraph": { "base": "rustandrotalathra:entity/rust/roamer/seraph"},
+			"candle": { "base": "game:block/candle"},
+			"brown": { "base": "game:block/glass/brown"},
+			"black": { "base": "game:block/leather/black"},
+			"plain": { "base": "game:block/leather/plain"},
+			"linen": { "base": "game:block/linen"},
+			"normal3": { "base": "game:block/metal/corroded/normal3"},
+			"rusty2": { "base": "game:block/metal/corroded/rusty2"},
+			"brass": { "base": "game:block/metal/tarnished/brass"},
+			"rust2": { "base": "game:block/metal/tarnished/rust2"},
+			"rusty-iron": { "base": "game:block/metal/tarnished/rusty-iron"},
+			"charred": { "base": "game:block/wood/charred"},
+			"top": { "base": "game:item/bag/linensack/top"}},
+
+		"*-rotwalker-normal": {
+			"seraph":  { base: "rustandrotalathra:entity/rotten/rotwalker/body/rotten1"},
+			"face":  { base: "rustandrotalathra:entity/rotten/rotwalker/face/face1"},
+			"hair":  { base: "rustandrotalathra:entity/rotten/rotwalker/hair/hair1"}
+			},
+
+		"*-rotwalker-deep": {
+				"seraph": { "base": "rustandrotalathra:entity/rotten/rotwalker/body/rottencave1"},
+				"metal": { "base": "game:item/tool/material/blackbronze" },
+				"handle": { "base": "game:item/tool/material/ebony"},
+				"ceramic": { "base": "game:block/clay/ceramic"},
+				"candle": { "base": "game:block/candle" },
+				"string": { "base": "game:item/tool/material/string"}},
+
+		"*-rotwalker-blackguard": {
+			"blackguard-damaged": { "base": "rustandrotalathra:entity/rotten/rotwalker/blackguard-damaged" },
+			"seraph": { "base": "rustandrotalathra:entity/rotten/miasma/miasma" },
+			"metal": { "base": "game:item/tool/sword-blackguard" },
+			"handle": { "base": "game:item/tool/sword-blackguard" },
+			"blackbronze5": { "base": "game:block/metal/plate/blackbronze"},
+			"aged":  { "base":	"game:block/wood/debarked/aged"},
+			"pattern-blackguard": { "base":	"game:item/tool/shield/pattern-blackguard"},
+			"blackbronze": { "base": "game:block/metal/ingot/blackbronze"}},
+
+		"*-rotpillar": {
+				"trader":  { base: "rustandrotalathra:entity/rotten/rotpillar/rotpillar"}},
+
+		"*-miasma": {
+				"seraph":  { base: "rustandrotalathra:entity/rotten/miasma/miasma"}},
+
+		"*-rotbeast-pig": {
+				"boar": { base: "rustandrotalathra:entity/rotten/rotbeast/pig" },
+				},
+		"*-rotbeast-wolf": {
+				"white": { base:"game:block/liquid/dye/white"},
+				"2": { base:"rustandrotalathra:entity/rotten/rotbeast/bone"},
+				"1": { base:"rustandrotalathra:entity/rotten/rotbeast/rot"},
+			},
+		"*-rotbeast-sheep": {
+				"ram": { base: "rustandrotalathra:entity/rotten/rotbeast/sheep" },
+				},
+		"*-mimic": {
+			"accessories": { base: "entity/rust/mimic/aged-accessories"},
+			"lid": { base: "entity/rust/mimic/aged-lid"},
+			"floor": { base: "entity/rust/mimic/aged-lid"},
+			"sides2": { base: "entity/rust/mimic/aged-sides"}			
+			},
+
+		"*-boiler": {
+			"rustyglow": { base: "game:block/metal/tarnished/rust2"},
+			"rusty-iron": { base:"game:block/metal/tarnished/rusty-iron"},
+			"steel": { base:"game:block/metal/tarnished/steel"},
+			"charred": { base:"game:block/wood/charred"},
+			"seraph": { base:"rustandrotalathra:entity/rust/boiler/blistersteel1"}
+		},
+
+		"*-bonemass": {
+			"bonemass": { base: "rustandrotalathra:entity/rotten/bonemass/bonemass"},
+			"human": { base:"rustandrotalathra:entity/rotten/bonemass/human"}
+		}
+		},
+	creativeinventory: { "general": ["*"], "items": ["*"], "creatures": ["*"], "rustandrotalathra": ["*"]  },
+	materialDensity: 600,
+	guiTransformByType: {
+		"*-itinerant-normal": { 
+				translation: { x: 4, y: 10, z: 0 },
+				rotation: { x: -18, y: -103, z: -180 },
+				origin: { x: 0.6, y: 0.4, z: 0.5 },
+				scale: 0.91
+		},
+		"*-roamer-normal": { 
+				translation: { x: 1, y: 12, z: 0 },
+				rotation: { x: -18, y: -130, z: -180 },
+				origin: { x: 0.6, y: 0.4, z: 0.5 },
+				scale: 0.39
+		},
+		"*-golem-normal": { 
+				translation: { x: 3, y: 12, z: 0 },
+				rotation: { x: -18, y: -95, z: -180 },
+				origin: { x: 0.6, y: 0.4, z: 0.5 },
+				scale: 0.7
+		 },
+
+		"*-rotpillar": { 
+				translation: { x: 11, y: 8, z: 0 },
+				rotation: { x: 0, y: -74, z: -171 },
+				scale: 0.75
+		 },
+		"*-rotwalker-normal": { 
+				translation: { x: 0, y: 12, z: 0 },
+				rotation: { x: -12, y: -81, z: -180 },
+				origin: { x: 0.6, y: 0.4, z: 0.5 },
+				scale: 0.91
+		 },
+		"*-rotwalker-deep": { 
+				translation: { x: 14, y: 6, z: 0 },
+				rotation: { x: 0, y: -89, z: -172 }
+		},
+		"*-rotwalker-blackguard": { 
+				translation: { x: 14, y: 6, z: 0 },
+				rotation: { x: -6, y: -80, z: -175 },
+				scale: 0.91
+		},
+		"*-rotbeast-sheep": { 
+			translation: { x: 4.2, y: -0.4, z: 0 },
+			rotation: { x: -7, y: -31, z: 163 },
+			scale: 0.72
+		},
+		"*-rotbeast-wolf": { 
+				rotation: { x: 0, y: -40, z: -180 },
+				scale: 0.96
+		 },
+		"*-rotbeast-pig": { 	
+			translation: { x: 3, y: -3, z: 0 },
+			rotation: { x: 0, y: -38, z: -180 },
+			scale: 1.05
+		},
+		"*-miasma": {
+				translation: { x: 6, y: -3, z: 0 },
+				rotation: { x: 0, y: -36, z: -180 },
+				scale: 1.21
+		},
+		"*-rotcrawler": {
+			translation: { x: 6, y: -3, z: 0 },
+			rotation: { x: 0, y: -36, z: -180 },
+			scale: 1.21
+},
+	"*-mimic": {
+			translation: { x: 1, y: 2, z: 0 },
+			rotation: { x: 0, y: -36, z: -180 },
+			scale: 0.8
+	},
+	"*-bonemass": {
+			translation: { x: 4, y: 11, z: 0 },
+			rotation: { x: 0, y: -36, z: -180 },
+			scale: 0.43
+},
+"*-boiler": {
+	translation: { x: 6, y: 13, z: 0 },
+	rotation: { x: -142, y: -79, z: 36 },
+	scale: 0.32
+},
+},
+
+	tpHandTransform: {
+
+			translation: { x: -0.4, y: 0, z: -0.6 },
+			rotation: { x: -160, y: -26, z: -90 },
+			origin: { x: 0.5, y: 0.1, z: 0.5 },
+			scale: 0.45	
+	},
+	
+	fpHandTransform: {
+	
+			translation: { x: 0.4, y: 0, z: 0 },
+			rotation: { x: -8, y: -63, z: -7 }
+	}
+}	
+
+	
+	
+	
+	
+
+
+
+
