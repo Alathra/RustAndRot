@@ -61,7 +61,7 @@
 			{ code: "controlledphysics", stepHeight: 1.1251 },
 			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 300 },
 			{ code: "health", currenthealth: 40, maxhealth: 40 },
-			{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "metalpartpile-large"},
+			{ code: "deaddecay", hoursToDecay: 3 },
 			{ code: "floatupwhenstuck", onlyWhenDead: true },
 			{ code: "breathe" },
 			{ 
@@ -134,16 +134,11 @@
 				"harvestable",
 				"duration": 2,
 				"drops": [
-			{ type: "item", code: "game:metalbit-gold", quantity: { avg: 5, var: 0.5 }   },
+			{ type: "item", code: "game:metalbit-copper", quantity: { avg: 5, var: 0.5 }   },
 			{ type: "item", code: "game:metalbit-iron", quantity: { avg: 5, var: 0.25 }   },
-			{ type: "item", code: "game:metalbit-platinum", quantity: { avg:4, var: 0.5 }   },
-			{ type: "item", code: "game:metalbit-meteoriciron", quantity: { avg: 7, var: 0.25 }   },
-			{ type: "item", code: "game:metalbit-steel", quantity: { avg: 3, var: 0.5 }   },
-			{ type: "item", code: "game:metalbit-uranium", quantity: { avg: 1, var: 0.25 }   },
-			{ type: "item", code: "game:ingot-gold", quantity: { avg: 1, var: 0.05 }   },
+			{ type: "item", code: "game:metalbit-tin", quantity: { avg:4, var: 0.5 }   },
 			{ type: "block", code: "game:metal-parts", quantity: { avg: 6, var: 0.5 }   },
-			{ type: "item", code: "game:salt", quantity: { avg: 15, var: 0.25 }   },
-			{ type: "item", code: "game:stone-limestone", quantity: { avg: 10, var: 0.5}   },
+			{ type: "item", code: "game:salt", quantity: { avg: 15, var: 0.25 }   }
 			]
 			}
 		],
@@ -153,13 +148,13 @@
 				"group": "hostile",
 				"maxQuantity": 1,
 				"chance": 0.0001,
-				"maxLightLevel": 32,
+				"maxLightLevel": 5,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { "avg": 2, "var": 1 },
 				"insideBlockCodes": ["game:air"],
-				"minY":0.52,
-				"maxY": 0.89
+				"minY":0.0,
+				"maxY": 0.85
 				}
 			},
 	sounds: {

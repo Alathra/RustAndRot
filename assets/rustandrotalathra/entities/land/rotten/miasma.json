@@ -55,7 +55,7 @@
 			{ code: "controlledphysics", stepHeight: 1.1251 },
 			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 300 },
 			{ code: "health", currenthealth: 50, maxhealth: 50 },
-			{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "drycarcass-humanoid1" },
+			{ code: "deaddecay", hoursToDecay: 3 },
 			{ code: "floatupwhenstuck", onlyWhenDead: true },
 			{ code: "breathe" },
 			{ 
@@ -156,15 +156,15 @@
 		"spawnconditions": {
 			"runtime": {
 				"group": "hostile",
-				"chance": 0.0001,
+				"chance": 0.0002,
 				"maxQuantity": 1,
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { "dist": "invexp", "avg": 1, "var": 0 },
 				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
 				"minY":0,
-				"maxY": 2,
+				"maxY": 0.6,
 				"companions": ["parasitic-fly", "parasitic-fly"]
 				}
 			},

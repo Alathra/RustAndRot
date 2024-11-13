@@ -168,15 +168,15 @@
 		"spawnconditions": {
 			"runtime": {
 				"group": "hostile",
-				"chance": 0.0003,
+				"chance": 0.01,
 				"maxQuantity": 3,
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { "dist": "invexp", "avg": 1, "var": 0 },
 				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
 				"minY":0,
-				"maxY": 2,
+				"maxY": 0.8,
 				"companions": ["parasitic-fly", "parasitic-fly"]
 				}
 			},

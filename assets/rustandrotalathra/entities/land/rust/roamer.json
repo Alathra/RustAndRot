@@ -84,7 +84,7 @@
 				"*-normal": 35,
 			},
 		},
-		{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "metalpartpile-large"},
+		{ code: "deaddecay", hoursToDecay: 3},
 		{ code: "floatupwhenstuck", onlyWhenDead: true },
 		{ code: "despawn", minPlayerDistance: 64, minSeconds: 6 },
 		{ code: "harvestable", "duration": 2, dropsByType: {
@@ -134,7 +134,6 @@
 						code: "bellalarm",
 						onNearbyEntityCodes: ["player", "rotbeast-*", "miasma", "parasitic-flies", "rotpillar", "rotwalker-*"],
 						spawnMobs: [
-							"rustandrotalathra:golem-normal",
 						],
 						spawnMaxQuantity: 10,
 						spawnIntervalMsMin: 1000,
@@ -203,15 +202,15 @@
 				maxQuantityByType: {
 					"*-normal": 1
 				},
-				"chance": 0.0005,
+				"chance": 0.005,
 				"minDistanceToPlayer": 40,
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",		
 				"groupSize": { dist: "uniform", avg: 1, var: 0 },
 				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
-				"minY":0.80,
-				"maxY": 2,
+				"minY":0.20,
+				"maxY": 0.9,
 				"companions": ["golem-normal", "golem-normal", "golem-normal"]
 			}
 		}
