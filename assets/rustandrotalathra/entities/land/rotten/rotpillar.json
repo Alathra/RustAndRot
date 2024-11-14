@@ -54,7 +54,7 @@
 			{ code: "controlledphysics", stepHeight: 1.1251 },
 			{ code: "despawn", minPlayerDistance: 8, belowLightLevel: 8, minSeconds: 300 },
 			{ code: "health", currenthealth: 20, maxhealth: 20, },
-			{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "drycarcass-humanoid2" },
+			{ code: "deaddecay", hoursToDecay: 3 },
 			{ code: "floatupwhenstuck", onlyWhenDead: true },
 			{ code: "harvestable", "duration": 2, drops: [
 					{
@@ -182,10 +182,10 @@
 				"group": "hostile",
 				"maxQuantity": 2,
 				"minY":0,
-				"maxY": 2,
-				"chance": 0.00033,
+				"maxY": 0.8,
+				"chance": 0.01,
 				"minDistanceToPlayer": 40,
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { dist: "uniform", avg: 1.5, var: 0.5 },

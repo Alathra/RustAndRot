@@ -115,7 +115,7 @@
 				} 
 			},
 			
-			{ code: "deaddecay", hoursToDecay: 4, decayedBlock: "carcass-medium" },
+			{ code: "deaddecay", hoursToDecay: 4 },
 			{ code: "floatupwhenstuck", onlyWhenDead: true },
 			{ code: "harvestable", "duration": 2, drops: [
 				{

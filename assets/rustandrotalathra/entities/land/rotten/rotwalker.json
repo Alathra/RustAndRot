@@ -120,7 +120,7 @@
 				"*-blackguard": 32
 			}
 		},
-		{ "code": "deaddecay", "hoursToDecay": 3, "decayedBlock": "drycarcass-humanoid2" },
+		{ "code": "deaddecay", "hoursToDecay": 3 },
 		{ "code": "floatupwhenstuck", "onlyWhenDead": true },
 		{ "code": "despawn", "minPlayerDistance": 32, "minSeconds": 30 },
 		{ "code": "harvestable",  "duration": 2, "dropsByType": {
@@ -321,7 +321,7 @@
 		"spawnconditions": {
 			"runtime": {
 				"group": "hostile",
-				"chance": 0.0005,
+				"chance": 0.025,
 				"minDistanceToPlayer": 40,
 				"maxQuantityByType": {
 					"*-normal": 7,
@@ -329,16 +329,16 @@
 					"*-blackguard": 1
 				},
 				"minYByType": {
-					"*-normal": 0.85,
-					"*-deep": 0.52,
+					"*-normal": 0.4,
+					"*-deep": 0.2,
 					"*-blackguard": 0
 				},
 				"maxYByType": {
-					"*-normal": 2,
-					"*-deep": 0.89,
-					"*-blackguard": 2
+					"*-normal": 0.8,
+					"*-deep": 0.4,
+					"*-blackguard": 0.2
 				},
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyblocklight",
 				"groupSize": { "dist": "uniform", "avg": 1.5, "var": 0.5 },

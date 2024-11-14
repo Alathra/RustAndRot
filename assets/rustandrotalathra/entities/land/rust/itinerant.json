@@ -78,7 +78,7 @@
 				"*-normal": 12,
 			},
 		},
-		{ code: "deaddecay", hoursToDecay: 3, decayedBlock: "metalpartpile-large"},
+		{ code: "deaddecay", hoursToDecay: 3 },
 		{ code: "floatupwhenstuck", onlyWhenDead: true },
 		{ code: "despawn", minPlayerDistance: 32, minSeconds: 30 },
 		{ code: "harvestable",  "duration": 2, dropsByType: {
@@ -188,13 +188,15 @@
 				maxQuantityByType: {
 					"*-normal": 8,
 				},
-				"chance": 0.0005,
+				"chance": 0.005,
 				"minDistanceToPlayer": 40,
-				"maxLightLevel": 4,
+				"maxLightLevel": 1,
 				"minLightLevel": 0,
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { dist: "uniform", avg: 1.5, var: 0.5 },
-				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
+				"insideBlockCodes": [ "game:air", "game:tallgrass-*", "game:snowlayer-1" ],
+				"maxY": 0.5,
+				"minY":  0
 			}
 		}
 	},
