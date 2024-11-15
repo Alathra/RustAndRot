@@ -233,12 +233,8 @@
 				"lightLevelType": "onlyBlockLight",
 				"groupSize": { "dist": "verynarrowgaussian", "avg": 0.25, "var": 0 },
 				"insideBlockCodes": ["game:air", "game:tallgrass-*", "game:snowlayer-1"],
-				"minTemp": -50,
-				"maxTemp": 50,
-				"minRain": 0.25,
-				"minForestOrShrubs": 0.25,
-				"maxForest": 0.75,
-				"maxShrubs": 0.75,
+				"minY": 0,
+				"maxY":  0.8
 			}
 		}
 	},
